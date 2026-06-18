@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测试公众号文章</title>
+</head>
+<body>
+<div class="rich_media_area_extra">
+    <!-- 头像（应被排除） -->
+    <img src="https://mmbiz.qpic.cn/mmbiz_jpg/AAAA/0?wx_fmt=jpeg" alt="cover_image" class="wx_follow_avatar_pic">
+    <!-- 作者头像（应被排除） -->
+    <img class="jump_author_avatar" src="http://mmbiz.qpic.cn/mmbiz_png/O0ddKa8kyy4/0?wx_fmt=png" alt="作者头像">
+    <!-- PC 二维码（应被排除） -->
+    <img id="js_pc_qr_code_img" class="qr_code_pc_img">
+</div>
+
+<div id="js_content" class="rich_media_content">
+    <p>文章正文开始</p>
+
+    <!-- 正文图片 1：首图，class 在 data-src 之前，无 imgIndex -->
+    <img class="rich_pages wxw-img" data-aistatus="1" data-ratio="1.33" data-s="300,640"
+         data-src="https://mmbiz.qpic.cn/mmbiz_png/AAAA/content1/640?wx_fmt=png&amp;from=appmsg"
+         data-type="png" data-w="1080">
+
+    <!-- 正文图片 2：data-src 在 class 之前，带 #imgIndex 锚点 -->
+    <img data-src="https://mmbiz.qpic.cn/sz_mmbiz_png/AAAA/content2/640?wx_fmt=png&amp;from=appmsg&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1#imgIndex=1"
+         alt="图片" class="rich_pages wxw-img" data-ratio="1.33" data-w="1080">
+
+    <!-- 正文图片 3 -->
+    <img data-src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/AAAA/content3/640?wx_fmt=jpeg&amp;from=appmsg&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1#imgIndex=2"
+         alt="图片" class="rich_pages wxw-img" data-ratio="1.0" data-w="1080">
+
+    <!-- 正文图片 4 -->
+    <img data-src="https://mmbiz.qpic.cn/mmbiz_png/AAAA/content4/640?wx_fmt=png&amp;from=appmsg&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1#imgIndex=3"
+         alt="图片" class="rich_pages wxw-img" data-ratio="1.33" data-w="1080">
+
+    <!-- 正文图片 5 -->
+    <img data-src="https://mmbiz.qpic.cn/mmbiz_png/AAAA/content5/640?wx_fmt=png&amp;from=appmsg&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1#imgIndex=4"
+         alt="图片" class="rich_pages wxw-img" data-ratio="1.33" data-w="1080">
+
+    <p>文章正文结束</p>
+</div>
+
+<!-- 跳转二维码（应被排除） -->
+<img class="jump_wx_qrcode_img js_qrcode_img" src="" alt="跳转二维码">
+
+<script>
+    // 表情模板字符串（在 script 中，DOM 不会解析为 img 节点）
+    var emojiTpl = '<img src="https://mmbiz.qpic.cn/emoji/0?wx_fmt=png" class="we-emoji" data-src="https://mmbiz.qpic.cn/emoji/0?wx_fmt=png&from=appmsg" />';
+
+    // 封面图变量
+    var msg_cdn_url = "https://mmbiz.qpic.cn/mmbiz_jpg/AAAA/cover/0?wx_fmt=jpeg";
+    var msg_title = "测试标题";
+</script>
+</body>
+</html>

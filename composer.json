@@ -1,0 +1,43 @@
+{
+    "name": "zyan/u2p",
+    "description": "网页图片抓取 SDK：输入网页链接，返回图片链接数组。内置微信公众号文章等专项抓取，支持 ajax 与源码两种图片加载方式。",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "image",
+        "scraper",
+        "crawler",
+        "wechat",
+        "weixin",
+        "mp",
+        "公众号",
+        "图片抓取",
+        "u2p"
+    ],
+    "authors": [
+        {
+            "name": "zyan"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "ext-curl": "*",
+        "ext-dom": "*",
+        "ext-mbstring": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zyan\\U2P\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Zyan\\U2P\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
