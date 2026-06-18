@@ -1,0 +1,16 @@
+
+$:
+  vscode:
+    - runner:
+        cpus: 4
+      docker:
+        image: php:7.4.33-alpine
+      services:
+        - vscode
+        - docker
+      stages:
+        - name: install
+          script: |
+            cd /workspace/server && pnpm install && npx prisma generate
+            cd /workspace/admin && pnpm install
+            cd /workspace/user && pnpm install
