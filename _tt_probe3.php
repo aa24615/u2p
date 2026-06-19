@@ -1,0 +1,21 @@
+<?php
+$body = file_get_contents('/workspace/_tt_full_api.json');
+$json = json_decode($body, true);
+$content = $json['data']['content'] ?? '';
+echo "=== content first 2000 chars ===\n";
+echo substr($content, 0, 2000) . "\n\n";
+echo "=== search for image markers ===\n";
+echo "img tag: " . substr_count($content, '<img') . "\n";
+echo "image: " . substr_count($content, 'image') . "\n";
+echo "src=: " . substr_count($content, 'src=') . "\n";
+echo "data-src: " . substr_count($content, 'data-src') . "\n";
+echo "toutiaoimg: " . substr_count($content, 'toutiaoimg') . "\n";
+echo "pstatp: " . substr_count($content, 'pstatp') . "\n";
+echo "pgc-image: " . substr_count($content, 'pgc-image') . "\n";
+echo "=== all http urls in content ===\n";
+preg_match_all('/https?:\/\/[^\s"\'<>\\)]+/i', $content, $m);
+foreach (array_slice($m[0], 0, 15) as $u) echo "  $u\n";
+echo "=== imageList check ===\n";
+echo "has imageList key: " . (isset($json['data']['imageList']) ? 'YES' : 'NO') . "\n";
+echo "=== poster_url ===\n";
+echo $json['data']['poster_url'] ?? 'none' . "\n";

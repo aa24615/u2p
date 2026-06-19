@@ -1,0 +1,16 @@
+=== content first 2000 chars ===
+<html><head></head><body><div><div id="meta_content" class="tt_format_meta_list"><p>6月17日，当事人张女士（化姓）告诉记者，她近期来衡阳出差，在当地一家名叫“爱遇”的主题酒店订了6月10日至18日共8晚的房间。</p><p>▲张女士发现的摄像头。受访者供图</p><p>“6月15日晚上，我洗完澡后整理化妆品，正打算把桌上的假花瓶挪到地上时，一个疑似摄像头的东西掉出来了。”张女士说，她问了朋友并在网上检索查证，确认掉出的是摄像头后报警，“警方到达现场后，店家称自己不会放这个东西。”</p><p>▲酒店房间的假花。受访者供图</p><p>张女士称，事发次日，店家联系她谈过和解，但双方未达成一致。目前，她最关心的是摄像头是否拍到了自己的隐私画面，以及视频会不会外传。</p><p>”张女士说，“此事发生后，我情绪焦躁、害怕不安，于是去医院心理科做了检查，被诊断为“适应障碍”。</p><p>6月18日，记者联系爱遇主题酒店的老板刘先生了解此事，其否认了酒店内部人员放置摄像头的可能，刘先生说，“她是在入住的第5天报警的，我们把最近一个月的监控都提交了，警方还提取了指纹、脚印等。等事情调查清楚后，该我们承担的责任，我们会承担。不该我们承担的，我们也会追溯。”</p><p>衡阳市公安局蒸湘分局华兴派出所6月17日出具的《接报案回执》显示，张女士于6月15日报称的“6.15爱遇酒店警情”已受理。</p><p>来源 | 红星新闻</p><p><em data-v-5821273a="">编辑 | 魏娜</em></p><p pingfang="" sc",="" system-ui,="" -apple-system,="" blinkmacsystemfont,="" "helvetica="" neue",="" "hiragino="" sans="" gb",="" "microsoft="" yahei="" ui",="" "microsoft="" yahei",="" arial,="" sans-serif;font-size:="" 17px;font-style:="" normal;font-variant-ligatures:="" normal;font-variant-caps:="" normal;f
+
+=== search for image markers ===
+img tag: 0
+image: 0
+src=: 0
+data-src: 0
+toutiaoimg: 0
+pstatp: 0
+pgc-image: 0
+=== all http urls in content ===
+=== imageList check ===
+has imageList key: NO
+=== poster_url ===
+https://p3-sign.toutiaoimg.com/tos-cn-i-tjoges91tu/443b1300ba269c49c49ed4bfbd49e569~tplv-tt-large.image?_iz=30575&lk3s=06827d14&x-expires=1782460529&x-signature=L%2Bw%2B1tcfxx06riFIJkpzG0Cr3BY%3D
