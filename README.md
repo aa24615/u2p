@@ -90,6 +90,7 @@ $images = $handler->extractImages($html, 'https://example.com/news/page');
 ```php
 use Zyan\U2P\AbstractHandler;
 use Zyan\U2P\U2P;
+use Symfony\Component\DomCrawler\Crawler;
 
 class MySiteHandler extends AbstractHandler
 {
@@ -104,8 +105,8 @@ class MySiteHandler extends AbstractHandler
         $crawler = $this->loadDom($html);
 
         $images = [];
-        $crawler->filter('.article img')->each(function ($node) use (&$images) {
-            $src = $node->attr('src');
+        $crawler->filter('.article img')->each(function (Crawler $node) use (&$images) {
+            $src = $this->resolveSrc($node);
             if ($src) {
                 $images[] = $src;
             }
