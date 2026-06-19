@@ -4,28 +4,17 @@ declare(strict_types=1);
 
 namespace Zyan\U2P;
 
+use GuzzleHttp\Client as GuzzleClient;
+use GuzzleHttp\RequestOptions;
+
 /**
- * 基于 cURL 的轻量 HTTP 客户端。
+ * 基于 Guzzle 的 HTTP 客户端封装。
  *
- * 零外部依赖，自带浏览器 UA 与重定向、压缩处理，
- * 也可通过子类化（覆盖 get()）实现测试 mock。
+ * 提供浏览器 UA、重定向、超时等默认配置，
+ * 也可通过构造函数注入自定义 GuzzleClient（如测试时用 MockHandler）。
  */
 class HttpClient
 {
-    /**
-     * 默认 cURL 选项。
-     */
-    protected array $defaultOptions = [
-        CURLOPT_RETURNTRANSFER => true,
-        CURLOPT_FOLLOWLOCATION => true,
-        CURLOPT_MAXREDIRS      => 5,
-        CURLOPT_CONNECTTIMEOUT => 15,
-        CURLOPT_TIMEOUT        => 30,
-        CURLOPT_SSL_VERIFYPEER => false,
-        CURLOPT_SSL_VERIFYHOST => false,
-        CURLOPT_ENCODING       => '',
-    ];
-
     /**
      * 默认请求头。
      */
@@ -35,68 +24,52 @@ class HttpClient
         'Accept-Language' => 'zh-CN,zh;q=0.9,en;q=0.8',
     ];
 
-    public function __construct(array $defaultHeaders = [], array $defaultOptions = [])
+    /**
+     * Guzzle 客户端实例。
+     */
+    protected GuzzleClient $guzzle;
+
+    public function __construct(?GuzzleClient $guzzle = null)
     {
-        if (!empty($defaultHeaders)) {
-            $this->defaultHeaders = array_merge($this->defaultHeaders, $defaultHeaders);
-        }
-        if (!empty($defaultOptions)) {
-            $this->defaultOptions = $defaultOptions + $this->defaultOptions;
-        }
+        $this->guzzle = $guzzle ?? new GuzzleClient([
+            'timeout'         => 30,
+            'connect_timeout' => 15,
+            'allow_redirects' => ['max' => 5],
+            'verify'          => false,
+            'http_errors'     => true,
+        ]);
     }
 
     /**
      * 发送 GET 请求并返回响应体。
      *
-     * @param array<string,string> $headers  额外请求头
-     * @param array<int,mixed>     $options  额外 cURL 选项
+     * @param array<string,string> $headers  额外请求头（与默认头合并）
      *
-     * @throws \RuntimeException 当请求失败或 HTTP 状态码 >= 400 时
+     * @throws \GuzzleHttp\Exception\GuzzleException 当请求失败或 HTTP 状态码 >= 400 时
      */
     public function get(string $url, array $headers = [], array $options = []): string
     {
-        $ch = curl_init($url);
+        $response = $this->guzzle->get($url, [
+            RequestOptions::HEADERS => array_merge($this->defaultHeaders, $headers),
+        ]);
 
-        $opts = $this->defaultOptions;
-
-        $headerLines = [];
-        foreach (array_merge($this->defaultHeaders, $headers) as $name => $value) {
-            $headerLines[] = $name . ': ' . $value;
-        }
-        $opts[CURLOPT_HTTPHEADER] = $headerLines;
-
-        foreach ($options as $key => $value) {
-            $opts[$key] = $value;
-        }
-
-        curl_setopt_array($ch, $opts);
-
-        $body = curl_exec($ch);
-        if ($body === false) {
-            $error = curl_error($ch);
-            curl_close($ch);
-            throw new \RuntimeException('HTTP request failed: ' . $error);
-        }
-
-        $code = (int) curl_getinfo($ch, CURLINFO_HTTP_CODE);
-        curl_close($ch);
-
-        if ($code >= 400) {
-            throw new \RuntimeException('HTTP request failed with status ' . $code . ' for ' . $url);
-        }
-
-        return (string) $body;
+        return (string) $response->getBody();
     }
 
+    /**
+     * 设置默认请求头（与已有默认头合并）。
+     */
     public function setDefaultHeaders(array $headers): self
     {
-        $this->defaultHeaders = $headers;
+        $this->defaultHeaders = array_merge($this->defaultHeaders, $headers);
         return $this;
     }
 
-    public function setDefaultOptions(array $options): self
+    /**
+     * 获取底层 Guzzle 客户端，便于高级配置。
+     */
+    public function getGuzzle(): GuzzleClient
     {
-        $this->defaultOptions = $options + $this->defaultOptions;
-        return $this;
+        return $this->guzzle;
     }
 }

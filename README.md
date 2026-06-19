@@ -9,6 +9,8 @@
 - PHP >= 7.4
 - ext-json
 - ext-mbstring
+- Guzzle（HTTP 客户端）
+- Symfony DomCrawler + CssSelector（HTML 解析）
 
 ## 安装
 
@@ -177,6 +179,7 @@ $images = $u2p->get('https://mp.weixin.qq.com/s/xxxx');
 
 - [Guzzle](https://github.com/guzzle/guzzle) — HTTP 客户端
 - [Symfony DomCrawler](https://github.com/symfony/dom-crawler) — HTML 解析
+- [Symfony CssSelector](https://github.com/symfony/css-selector) — CSS 选择器
 
 ## License
 
