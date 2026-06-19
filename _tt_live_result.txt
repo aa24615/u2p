@@ -1,0 +1,10 @@
+=== 文章1（纯文字新闻，只有封面） ===
+正文图片: 0 张
+含封面: 1 张
+封面: https://p3-sign.toutiaoimg.com/tos-cn-i-tjoges91tu/443b1300ba269c49c49ed4bfbd49e569~tplv-tt-large.image?_iz=30575&lk3s=06827d14&x-expires=1782464087&x-signature=GfNSdE1XqM5GPohFu9G9KCzx0qc%3D
+
+=== 文章2（图文，8张正文图） ===
+正文图片: 8 张
+  1. https://p11-sign.toutiaoimg.com/tos-cn-i-axegupay5k/8ec148e72b1f42e78eddd6c5023d...
+  2. https://p11-sign.toutiaoimg.com/tos-cn-i-6w9my0ksvp/6e93295840c94c46a104c95798e7...
+  3. https://p11-sign.toutiaoimg.com/tos-cn-i-6w9my0ksvp/0afccf6adb79462392bd98c02c30...
