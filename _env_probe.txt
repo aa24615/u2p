@@ -1,4 +1,36 @@
-=== try download composer ===
-1
-exit=0
--rw-r--r--    1 root     root         59524 Jun 19 15:00 composer-setup.php
+PHPUnit 9.6.34 by Sebastian Bergmann and contributors.
+
+F.R...SF.                                                           9 / 9 (100%)
+
+Time: 00:04.012, Memory: 8.00 MB
+
+There were 2 failures:
+
+1) Zyan\U2P\Tests\GenericSitesLiveTest::testScrapeGenericSite with data set "url2pic 首页" ('https://www.url2pic.com/', true)
+[https://www.url2pic.com/] 应至少抓到一张图片
+Failed asserting that an array is not empty.
+
+/workspace/tests/GenericSitesLiveTest.php:75
+phpvfscomposer:///workspace/vendor/phpunit/phpunit/phpunit:106
+
+2) Zyan\U2P\Tests\GenericSitesLiveTest::testScrapeGenericSite with data set "千库网素材分类" ('https://588ku.com/sucai/0-def...0-0-1/', true)
+[https://588ku.com/sucai/0-default-0-78-0-0-1/] 应至少抓到一张图片
+Failed asserting that an array is not empty.
+
+/workspace/tests/GenericSitesLiveTest.php:75
+phpvfscomposer:///workspace/vendor/phpunit/phpunit/phpunit:106
+
+--
+
+There was 1 risky test:
+
+1) Zyan\U2P\Tests\GenericSitesLiveTest::testScrapeGenericSite with data set "百度图片首页" ('https://image.baidu.com/', false)
+This test did not perform any assertions
+
+/workspace/tests/GenericSitesLiveTest.php:68
+
+phpvfscomposer:///workspace/vendor/phpunit/phpunit/phpunit:106
+
+FAILURES!
+Tests: 9, Assertions: 62, Failures: 2, Skipped: 1, Risky: 1.
+exit=1
