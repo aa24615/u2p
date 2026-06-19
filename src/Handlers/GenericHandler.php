@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Zyan\U2P\Handlers;
 
-use Symfony\Component\DomCrawler\Crawler;
 use Zyan\U2P\AbstractHandler;
 
 /**
@@ -55,23 +54,26 @@ class GenericHandler extends AbstractHandler
      */
     public function extractImages(string $html, string $baseUrl = ''): array
     {
-        $crawler = $this->loadDom($html);
+        $dom = $this->loadDom($html);
+        $xpath = new \DOMXPath($dom);
 
         $images = [];
-        $crawler->filter('img')->each(function (Crawler $node) use (&$images, $baseUrl) {
-            $src = $this->resolveSrc($node);
+        $nodes = $xpath->query('//img');
+        foreach ($nodes as $img) {
+            /** @var \DOMElement $img */
+            $src = $this->resolveSrc($img);
             if ($src === '') {
-                return;
+                continue;
             }
             if ($this->isExcluded($src)) {
-                return;
+                continue;
             }
             $src = $this->resolveRelative($src, $baseUrl);
             $src = $this->cleanUrl($src);
             if ($src !== '') {
                 $images[] = $src;
             }
-        });
+        }
 
         return array_values(array_unique($images));
     }

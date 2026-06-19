@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Zyan\U2P\Handlers;
 
-use Symfony\Component\DomCrawler\Crawler;
 use Zyan\U2P\AbstractHandler;
 
 /**
@@ -83,22 +82,25 @@ class WeChatHandler extends AbstractHandler
      */
     public function extractContentImages(string $html): array
     {
-        $crawler = $this->loadDom($html);
+        $dom = $this->loadDom($html);
+        $xpath = new \DOMXPath($dom);
 
         $images = [];
-        $crawler->filter('img')->each(function (Crawler $node) use (&$images) {
-            $src = $this->resolveSrc($node);
+        $nodes = $xpath->query('//img');
+        foreach ($nodes as $img) {
+            /** @var \DOMElement $img */
+            $src = $this->resolveSrc($img);
             if ($src === '') {
-                return;
+                continue;
             }
-            if (!$this->isContentImage($node, $src)) {
-                return;
+            if (!$this->isContentImage($img, $src)) {
+                continue;
             }
             $src = $this->cleanUrl($src);
             if ($src !== '') {
                 $images[] = $src;
             }
-        });
+        }
 
         return array_values(array_unique($images));
     }
@@ -111,9 +113,9 @@ class WeChatHandler extends AbstractHandler
      *  - 仅保留 mmbiz.qpic.cn 图床；
      *  - class 含 rich_pages / wxw-img，或 URL 含 from=appmsg 视为正文。
      */
-    protected function isContentImage(Crawler $node, string $src): bool
+    protected function isContentImage(\DOMElement $img, string $src): bool
     {
-        $class = $node->attr('class') ?? '';
+        $class = $img->getAttribute('class');
 
         foreach ($this->excludeClasses as $exclude) {
             if (stripos($class, $exclude) !== false) {

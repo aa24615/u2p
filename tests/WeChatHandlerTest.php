@@ -4,15 +4,24 @@ declare(strict_types=1);
 
 namespace Zyan\U2P\Tests;
 
-use GuzzleHttp\Client as GuzzleClient;
-use GuzzleHttp\Handler\MockHandler;
-use GuzzleHttp\HandlerStack;
-use GuzzleHttp\Psr7\Response;
 use PHPUnit\Framework\TestCase;
 use Zyan\U2P\Handlers\GenericHandler;
 use Zyan\U2P\Handlers\WeChatHandler;
 use Zyan\U2P\HttpClient;
 use Zyan\U2P\U2P;
+
+/**
+ * 测试用 HTTP 客户端：直接返回 fixture 文件内容，不发起真实请求。
+ */
+class FixtureHttpClient extends HttpClient
+{
+    public string $fixture = '';
+
+    public function get(string $url, array $headers = [], array $options = []): string
+    {
+        return file_get_contents($this->fixture);
+    }
+}
 
 class WeChatHandlerTest extends TestCase
 {
@@ -21,17 +30,11 @@ class WeChatHandlerTest extends TestCase
         return __DIR__ . '/fixtures/wechat.html';
     }
 
-    /**
-     * 使用 Guzzle MockHandler 创建返回 fixture 内容的 HttpClient。
-     */
-    protected function makeClient(string $fixture): HttpClient
+    protected function makeClient(string $fixture): FixtureHttpClient
     {
-        $body = file_get_contents($fixture);
-        $mock = new MockHandler([new Response(200, [], $body)]);
-        $handlerStack = HandlerStack::create($mock);
-        $guzzle = new GuzzleClient(['handler' => $handlerStack]);
-
-        return new HttpClient($guzzle);
+        $client = new FixtureHttpClient();
+        $client->fixture = $fixture;
+        return $client;
     }
 
     public function testSupportsWeChatUrl(): void
