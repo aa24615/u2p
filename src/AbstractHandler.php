@@ -40,13 +40,14 @@ abstract class AbstractHandler implements HandlerInterface
     {
         $html = $this->ensureUtf8($html);
 
+        // 确保存在 <meta charset="UTF-8">，让 DOM 正确解析中文
+        if (stripos($html, '<meta') === false || stripos($html, 'charset') === false) {
+            $html = '<meta charset="UTF-8">' . $html;
+        }
+
         $previous = libxml_use_internal_errors(true);
         $dom = new \DOMDocument();
-        // 前置 XML 声明强制以 UTF-8 解析，避免中文乱码
-        @$dom->loadHTML(
-            '<?xml encoding="UTF-8">' . $html,
-            LIBXML_HTML_NODEFDTD | LIBXML_HTML_NOIMPLIED
-        );
+        @$dom->loadHTML($html, LIBXML_HTML_NODEFDTD | LIBXML_HTML_NOIMPLIED);
         libxml_clear_errors();
         libxml_use_internal_errors($previous);
 
@@ -76,7 +77,8 @@ abstract class AbstractHandler implements HandlerInterface
      * 解析单个 img 节点的真实图片地址。
      *
      * 依次尝试 data-src、data-original、data-lazy-src、src（懒加载优先），
-     * 仅返回 http(s) 或协议相对（//）地址。
+     * 返回解码后的地址（可能是绝对 URL、协议相对、根路径、相对路径）。
+     * 空白、data:、about:、javascript: 等伪协议由子类 isExcluded() 负责过滤。
      */
     protected function resolveSrc(\DOMElement $img): string
     {
@@ -85,9 +87,7 @@ abstract class AbstractHandler implements HandlerInterface
             if ($val === '') {
                 continue;
             }
-            if (preg_match('#^https?://#i', $val) || strpos($val, '//') === 0) {
-                return html_entity_decode($val, ENT_QUOTES | ENT_HTML5, 'UTF-8');
-            }
+            return html_entity_decode($val, ENT_QUOTES | ENT_HTML5, 'UTF-8');
         }
 
         return '';
