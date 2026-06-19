@@ -1,0 +1,4 @@
+=== try download composer ===
+1
+exit=0
+-rw-r--r--    1 root     root         59524 Jun 19 15:00 composer-setup.php
