@@ -99,6 +99,37 @@ class WeChatHandlerTest extends TestCase
 
         $this->assertCount(5, $images);
     }
+
+    public function testExtractPicturePageImages(): void
+    {
+        $fixture = __DIR__ . '/fixtures/wechat_picture_page.html';
+        $handler = new WeChatHandler($this->makeClient($fixture));
+
+        $images = $handler->handle('https://mp.weixin.qq.com/s/oHLa0IhHZArCWb9d-rLKfQ');
+
+        $this->assertCount(3, $images);
+
+        foreach ($images as $url) {
+            $this->assertStringContainsString('mmbiz.qpic.cn', $url);
+            $this->assertStringNotContainsString('watermark', $url);
+            $this->assertStringNotContainsString('avatar', $url);
+        }
+
+        $this->assertSame('https://mmbiz.qpic.cn/sz_mmbiz_jpg/AAAA/pic1/0?wx_fmt=jpeg', $images[0]);
+        $this->assertStringNotContainsString('&amp;', $images[1]);
+    }
+
+    public function testPicturePageWithCover(): void
+    {
+        $fixture = __DIR__ . '/fixtures/wechat_picture_page.html';
+        $handler = new WeChatHandler($this->makeClient($fixture));
+        $handler->withCover();
+
+        $images = $handler->handle('https://mp.weixin.qq.com/s/oHLa0IhHZArCWb9d-rLKfQ');
+
+        $this->assertSame('http://mmbiz.qpic.cn/mmbiz_jpg/AAAA/cover/0?wx_fmt=jpeg', $images[0]);
+        $this->assertCount(4, $images);
+    }
 }
 
 class GenericHandlerTest extends TestCase

@@ -11,6 +11,7 @@ use Zyan\U2P\AbstractHandler;
  *
  * 公众号文章正文图片采用懒加载：图片真实地址写在 <img data-src> 中，
  * 而非 src；图床域名为 mmbiz.qpic.cn 且带 from=appmsg 参数。
+ * 图片画廊类文章则通过 window.picture_page_info_list 注入图片地址。
  * 头像、二维码、表情等非正文图片通过 class 与 URL 特征排除。
  *
  * 用法：
@@ -82,6 +83,19 @@ class WeChatHandler extends AbstractHandler
      */
     public function extractContentImages(string $html): array
     {
+        $images = $this->extractDomImages($html);
+        $picturePageImages = $this->extractPicturePageImages($html);
+
+        return array_values(array_unique(array_merge($images, $picturePageImages)));
+    }
+
+    /**
+     * 从正文 img 节点提取图片（传统图文文章）。
+     *
+     * @return string[]
+     */
+    protected function extractDomImages(string $html): array
+    {
         $dom = $this->loadDom($html);
         $xpath = new \DOMXPath($dom);
 
@@ -99,6 +113,45 @@ class WeChatHandler extends AbstractHandler
             $src = $this->cleanUrl($src);
             if ($src !== '') {
                 $images[] = $src;
+            }
+        }
+
+        return $images;
+    }
+
+    /**
+     * 从 picture_page_info_list 提取图片（图片画廊类文章）。
+     *
+     * 此类文章正文图片通过 JS 变量注入，页面中无 data-src img 节点。
+     *
+     * @return string[]
+     */
+    protected function extractPicturePageImages(string $html): array
+    {
+        if (!preg_match('/window\.picture_page_info_list\s*=\s*\[/s', $html, $match, PREG_OFFSET_CAPTURE)) {
+            return [];
+        }
+
+        $sub = substr($html, $match[0][1]);
+        if (!preg_match('/\];/s', $sub, $end, PREG_OFFSET_CAPTURE)) {
+            return [];
+        }
+
+        $block = substr($sub, 0, $end[0][1] + 2);
+        if (!preg_match_all(
+            "/width:\s*'[^']*'\s*\*\s*1,\s*height:\s*'[^']*'\s*\*\s*1,\s*cdn_url:\s*'([^']+)'/s",
+            $block,
+            $matches
+        )) {
+            return [];
+        }
+
+        $images = [];
+        foreach ($matches[1] as $url) {
+            $url = html_entity_decode($url, ENT_QUOTES | ENT_HTML5, 'UTF-8');
+            $url = $this->cleanUrl($url);
+            if ($url !== '' && stripos($url, 'mmbiz.qpic.cn') !== false) {
+                $images[] = $url;
             }
         }
 
@@ -144,6 +197,10 @@ class WeChatHandler extends AbstractHandler
     protected function extractCover(string $html): string
     {
         if (preg_match('/msg_cdn_url\s*=\s*["\']([^"\']+)["\']/', $html, $m)) {
+            return html_entity_decode($m[1], ENT_QUOTES | ENT_HTML5, 'UTF-8');
+        }
+
+        if (preg_match('/<meta\s+property=["\']og:image["\']\s+content=["\']([^"\']+)["\']/i', $html, $m)) {
             return html_entity_decode($m[1], ENT_QUOTES | ENT_HTML5, 'UTF-8');
         }
 
