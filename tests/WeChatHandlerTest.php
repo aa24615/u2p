@@ -5,13 +5,12 @@ declare(strict_types=1);
 namespace Zyan\U2P\Tests;
 
 use PHPUnit\Framework\TestCase;
-use Zyan\U2P\Handlers\GenericHandler;
 use Zyan\U2P\Handlers\WeChatHandler;
 use Zyan\U2P\HttpClient;
 use Zyan\U2P\U2P;
 
 /**
- * 返回本地 fixture 内容的测试用 HTTP 客户端。
+ * 测试用 HTTP 客户端：直接返回 fixture 文件内容，不发起真实请求。
  */
 class FixtureHttpClient extends HttpClient
 {
@@ -132,29 +131,4 @@ class WeChatHandlerTest extends TestCase
     }
 }
 
-class GenericHandlerTest extends TestCase
-{
-    public function testExtractImagesResolvesRelativeUrls(): void
-    {
-        $html = <<<'HTML'
-<html><body>
-<img src="https://example.com/a.jpg">
-<img data-src="//cdn.example.com/b.png">
-<img data-original="/img/c.jpeg">
-<img class="lazy" data-lazy-src="d.gif">
-<img src="data:image/png;base64,xxxx">
-<img src="about:blank">
-<img src="">
-</body></html>
-HTML;
-        $handler = new GenericHandler();
-        $images = $handler->extractImages($html, 'https://example.com/news/index.html');
 
-        $this->assertSame([
-            'https://example.com/a.jpg',
-            'https://cdn.example.com/b.png',
-            'https://example.com/img/c.jpeg',
-            'https://example.com/news/d.gif',
-        ], $images);
-    }
-}

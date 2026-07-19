@@ -1,0 +1,25 @@
+https://m.toutiao.com/i7652913480072167972/info/v2/
+  code=200 len=11671
+  >>> HAS CONTENT <<<
+
+https://m.toutiao.com/i7652913480072167972/info/
+  code=200 len=11671
+  >>> HAS CONTENT <<<
+
+https://www.toutiao.com/api/pc/article/v1/pcArticleDetail?article_id=7652913480072167972
+  code=404 len=1232
+  >>> HAS CONTENT <<<
+  body: <!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>404错误页</title>
+<style>
+html,#content{ background:#fff}
+</style>
+<script>
+    var _gaq = _gaq || [];
+    var href = location.href;
+    var ga_ua = 'UA-28423340-28';
+    _gaq.push(['_setAccount', ga_ua]);
+    _gaq.push(['_trackPageview'

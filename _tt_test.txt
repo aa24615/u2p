@@ -1,0 +1,56 @@
+PHPUnit 9.6.34 by Sebastian Bergmann and contributors.
+
+.FF..F.FF.....F.                                                  16 / 16 (100%)
+
+Time: 00:00.010, Memory: 6.00 MB
+
+There were 6 failures:
+
+1) Zyan\U2P\Tests\ToutiaoHandlerTest::testExtractArticleIdFromArticlePath
+Failed asserting that two strings are identical.
+--- Expected
++++ Actual
+@@ @@
+-'7652913480072167972'
++''
+
+/workspace/tests/ToutiaoHandlerTest.php:61
+phpvfscomposer:///workspace/vendor/phpunit/phpunit/phpunit:106
+
+2) Zyan\U2P\Tests\ToutiaoHandlerTest::testExtractArticleIdWithQueryParams
+Failed asserting that two strings are identical.
+--- Expected
++++ Actual
+@@ @@
+-'7652651188260700699'
++''
+
+/workspace/tests/ToutiaoHandlerTest.php:67
+phpvfscomposer:///workspace/vendor/phpunit/phpunit/phpunit:106
+
+3) Zyan\U2P\Tests\ToutiaoHandlerTest::testExtractContentImages
+Failed asserting that actual size 0 matches expected size 8.
+
+/workspace/tests/ToutiaoHandlerTest.php:93
+phpvfscomposer:///workspace/vendor/phpunit/phpunit/phpunit:106
+
+4) Zyan\U2P\Tests\ToutiaoHandlerTest::testWithCover
+Failed asserting that actual size 0 matches expected size 9.
+
+/workspace/tests/ToutiaoHandlerTest.php:122
+phpvfscomposer:///workspace/vendor/phpunit/phpunit/phpunit:106
+
+5) Zyan\U2P\Tests\ToutiaoHandlerTest::testWithoutCoverByDefault
+Failed asserting that actual size 0 matches expected size 8.
+
+/workspace/tests/ToutiaoHandlerTest.php:132
+phpvfscomposer:///workspace/vendor/phpunit/phpunit/phpunit:106
+
+6) Zyan\U2P\Tests\ToutiaoHandlerTest::testU2PDispatchesToToutiaoHandler
+Failed asserting that actual size 0 matches expected size 8.
+
+/workspace/tests/ToutiaoHandlerTest.php:201
+phpvfscomposer:///workspace/vendor/phpunit/phpunit/phpunit:106
+
+FAILURES!
+Tests: 16, Assertions: 25, Failures: 6.

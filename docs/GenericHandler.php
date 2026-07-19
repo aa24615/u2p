@@ -4,13 +4,12 @@ declare(strict_types=1);
 
 namespace Zyan\U2P\Handlers;
 
-use Symfony\Component\DomCrawler\Crawler;
 use Zyan\U2P\AbstractHandler;
 
 /**
  * 通用网页图片抓取（兜底处理器）。
  *
- * 适用于任意网页：通过 CSS 选择器解析页面源码中的 <img> 标签，
+ * 适用于任意网页：解析页面源码中的 <img> 标签，
  * 优先取懒加载地址（data-src 等），自动解析相对路径，
  * 过滤 base64、空白等无效地址。
  *
@@ -55,23 +54,26 @@ class GenericHandler extends AbstractHandler
      */
     public function extractImages(string $html, string $baseUrl = ''): array
     {
-        $crawler = $this->loadDom($html);
+        $dom = $this->loadDom($html);
+        $xpath = new \DOMXPath($dom);
 
         $images = [];
-        $crawler->filter('img')->each(function (Crawler $node) use (&$images, $baseUrl) {
-            $src = $this->resolveSrc($node);
+        $nodes = $xpath->query('//img');
+        foreach ($nodes as $img) {
+            /** @var \DOMElement $img */
+            $src = $this->resolveSrc($img);
             if ($src === '') {
-                return;
+                continue;
             }
             if ($this->isExcluded($src)) {
-                return;
+                continue;
             }
             $src = $this->resolveRelative($src, $baseUrl);
             $src = $this->cleanUrl($src);
             if ($src !== '') {
                 $images[] = $src;
             }
-        });
+        }
 
         return array_values(array_unique($images));
     }
@@ -112,17 +114,12 @@ class GenericHandler extends AbstractHandler
         if (strpos($src, '/') === 0) {
             return $scheme . '://' . $host . $port . $src;
         }
-        // 相对路径：取 baseUrl 的目录部分
+        // 相对路径
         $baseDir = '';
         if (isset($parts['path'])) {
-            $path = $parts['path'];
-            if (substr($path, -1) === '/') {
-                // 以 / 结尾说明是目录
-                $baseDir = rtrim($path, '/');
-            } else {
-                // 最后一段视为文件名，取其目录
-                $baseDir = rtrim(dirname($path), '/');
-            }
+            $path = rtrim($parts['path'], '/');
+            $baseDir = (string) preg_replace('#/[^/]*$#', '', $path);
+            $baseDir = rtrim($baseDir, '/');
         }
         return $scheme . '://' . $host . $port . $baseDir . '/' . $src;
     }

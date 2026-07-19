@@ -21,8 +21,10 @@
     ],
     "require": {
         "php": ">=7.4",
-        "ext-curl": "*",
-        "ext-dom": "*",
+        "guzzlehttp/guzzle": "^6.5|^7.5",
+        "symfony/dom-crawler": "^5.4",
+        "symfony/css-selector": "^5.4",
+        "ext-json": "*",
         "ext-mbstring": "*"
     },
     "require-dev": {
