@@ -97,8 +97,6 @@ class WeChatHandler extends AbstractHandler
      */
     protected function extractDomImages(string $html): array
     {
-        $dom = $this->loadDom($html);
-        $xpath = new \DOMXPath($dom);
         $crawler = $this->loadDom($html);
 
         $images = [];
