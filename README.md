@@ -2,7 +2,7 @@
 
 网页图片抓取 SDK —— 输入网页链接，返回图片链接数组。
 
-内置微信公众号文章等专项抓取，支持懒加载、ajax 接口等多种图片加载方式，可扩展自定义网站处理器。
+内置微信公众号文章、豆包 / 千问 AI 分享页、今日头条文章等专项抓取，支持懒加载、ajax 接口等多种图片加载方式，可扩展自定义网站处理器。
 
 ## 环境要求
 
@@ -81,6 +81,53 @@ $images = $handler->handle('https://example.com/article');
 
 ```php
 $images = $handler->extractImages($html, 'https://example.com/news/page');
+```
+
+### 豆包 AI 分享页（DoubaoHandler）
+
+豆包 AI 对话分享页的图片通过 `mergeLoaderData` 注入页面脚本，正文使用 `image_ori_raw` 无水印原图（而非带水印的预览地址）。处理器从页面脚本中提取 JSON 载荷，解析 `creation_block` 中的图片。
+
+```php
+use Zyan\U2P\Handlers\DoubaoHandler;
+
+$handler = new DoubaoHandler();
+
+// 抓取豆包分享页中的无水印图片
+$images = $handler->handle('https://www.doubao.com/thread/xxxx');
+```
+
+解析逻辑参考 [ihmily/doubao-nomark](https://github.com/ihmily/doubao-nomark)。
+
+### 千问 AI 分享页（QianwenHandler）
+
+千问分享页为 SPA，图片数据需通过 `share/info` 接口获取。处理器提取 `share_id` 后调用接口，取 `display_list[].image[].url` 作为无水印原图，自动排除水印图与缩略图。
+
+```php
+use Zyan\U2P\Handlers\QianwenHandler;
+
+$handler = new QianwenHandler();
+
+// 抓取千问分享页图片
+$images = $handler->handle('https://www.qianwen.com/share/chat/xxxx');
+
+// 也可单独提取 share_id
+$id = $handler->extractShareId('https://www.qianwen.com/share/chat/xxxx');
+```
+
+### 今日头条文章（ToutiaoHandler）
+
+今日头条 PC 页面有反爬（需浏览器指纹），直接抓取 HTML 拿不到正文，故改走移动端 API（`m.toutiao.com/i{id}/info/v2/`）。正文 HTML 在 `data.content`，图片为 `<img src="...toutiaoimg.com...">`，封面图在 `data.poster_url`。
+
+```php
+use Zyan\U2P\Handlers\ToutiaoHandler;
+
+$handler = new ToutiaoHandler();
+
+// 抓取头条文章图片
+$images = $handler->handle('https://www.toutiao.com/article/7652651188260700699/');
+
+// 将封面图（poster_url）置于结果首位
+$images = $handler->withCover()->handle($url);
 ```
 
 ## 自定义处理器
@@ -175,6 +222,31 @@ $images = $u2p->get('https://mp.weixin.qq.com/s/xxxx');
 |------|------|
 | `handle(string $url): string[]` | 抓取任意网页图片 |
 | `extractImages(string $html, string $baseUrl = ''): string[]` | 从 HTML 中提取图片 |
+
+### `DoubaoHandler`
+
+| 方法 | 说明 |
+|------|------|
+| `handle(string $url): string[]` | 抓取豆包 AI 分享页图片 |
+| `extractContentImages(string $html): string[]` | 从页面 HTML 中提取无水印图片 |
+
+### `QianwenHandler`
+
+| 方法 | 说明 |
+|------|------|
+| `handle(string $url): string[]` | 抓取千问 AI 分享页图片 |
+| `extractShareId(string $url): string` | 提取分享链接中的 `share_id` |
+| `extractContentImages(string $jsonBody): string[]` | 从 API 响应 JSON 中提取无水印图片 |
+
+### `ToutiaoHandler`
+
+| 方法 | 说明 |
+|------|------|
+| `handle(string $url): string[]` | 抓取今日头条文章图片 |
+| `withCover(bool $withCover = true): self` | 是否包含封面图（置于结果首位） |
+| `extractArticleId(string $url): string` | 提取文章 ID |
+| `extractContentImages(string $jsonBody): string[]` | 从 API 响应 JSON 中提取正文图片 |
+| `extractCover(string $jsonBody): string` | 提取封面图（`poster_url`） |
 
 ## 技术栈
 
