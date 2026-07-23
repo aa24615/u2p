@@ -1,0 +1,702 @@
+{
+    "trace_id": "2150422a17847391532206840e0ac7",
+    "code": 0,
+    "msg": "success",
+    "data": {
+        "title": "20岁白发美女画像生成",
+        "session": {
+            "biz_id": "ai_qwen",
+            "user_type": 0,
+            "session_id": "3286165f26834a4da0688d97fbd5fe4f",
+            "create_time": "2026-07-06T11:47:39.907+00:00",
+            "update_time": "2026-07-22T16:49:39.528+00:00",
+            "last_req_time": "2026-07-22T16:49:39.528+00:00",
+            "created_at": 1783338459907,
+            "updated_at": 1784738979528,
+            "last_req_timestamp": 1784738979528,
+            "title": "性感穿搭推荐",
+            "record_list": [
+                {
+                    "user_type": 0,
+                    "session_id": "3286165f26834a4da0688d97fbd5fe4f",
+                    "req_id": "38020965df8f4273b6421b4710264ec8",
+                    "request_messages": [
+                        {
+                            "content": "生成 20岁的 白发美女",
+                            "mime_type": "text/plain",
+                            "meta_data": {
+                                "ori_query": "生成 20岁的 白发美女"
+                            }
+                        }
+                    ],
+                    "response_messages": [
+                        {
+                            "mime_type": "signal/post",
+                            "status": "complete",
+                            "meta_data": {
+                                "operation_types": [
+                                    [
+                                        "regenerate"
+                                    ]
+                                ],
+                                "intent_content": "内容创作-图片创作",
+                                "intent_data": "{\"agent_info\":{\"agent\":\"AIZaoDianAgent\",\"judge_type\":\"normal_judge\",\"image_request\":\"0\",\"hit_vlm\":false,\"intent_request\":\"1\",\"scene\":\"zaodian_image_generate_image\",\"sub_scene\":\"\"},\"agentic_intent\":{\"content\":\"\"},\"banner_intent\":{\"need_trigger\":false},\"black_intent\":{\"black_list\":[]},\"confidence_intent\":{\"document\":false,\"topic\":false},\"ef_intent\":{\"content\":\"文本创作\",\"origin_content\":\"文本创作\",\"llm_error_msg\":\"request process success!\",\"llm_error_code\":0},\"explicit_intent\":{\"explicit_memory\":false},\"search_intent\":{\"content\":\"图像生成任务，无时效性。涉及外貌描述，可能触发安全策略。</think>\\nT3|D1|安全拦截\",\"is_search\":false,\"is_simple\":false,\"label\":\"T3|D1|安全拦截\"},\"gao_kao_intent\":{\"content\":\"其他\"},\"makeup_intent\":{\"is_full_intent\":false,\"result\":{}},\"skill_intent\":{\"content\":\"\",\"intent_classify_content\":\"\",\"item_list\":[],\"llm_error_code\":0,\"llm_error_msg\":\"\",\"model_name\":\"\",\"skill_list\":[],\"skill_retrieve_content\":\"\"},\"tp_intent\":{\"third_party_scene\":\"\",\"trigger_third_party\":false},\"follow_up_intent\":{\"content\":\"\"},\"forward_intent\":{\"blocked\":true,\"content\":\"\"},\"tusou_intent\":{\"img_category\":0,\"intent\":0,\"round_index\":-1,\"session_id\":0},\"difficulty_intent\":{\"content\":\"Query缺乏明确谓语和具体约束，意图模糊，属于无语境闲聊式求助，保底L2。</think>\\nL2\",\"label\":\"L2\"},\"ef_correct_intent\":{\"category\":\"\",\"content\":\"\",\"platform\":\"\"},\"comment_intent\":{\"content\":\"\"},\"intentResults\":{\"ef_intent\":\"文本创作\",\"vqa_image_name\":\"异常\",\"vqa_ext_intent\":\"异常\",\"agentic_intent\":\"\",\"writer_intent\":\"\",\"uvl_intent\":\"内容创作-图片创作\"},\"rag_intent\":{\"content\":\"\",\"need_rag\":false},\"task_intent\":{\"content\":\"\"},\"txt_intent\":{},\"uvl_intent\":{\"content\":\"内容创作-图片创作\",\"model_name\":\"quarkchat-unified-intent-308x\",\"llm_error_msg\":\"request process success!\",\"llm_error_code\":0},\"vl_intent\":{},\"vqa_ext_intent\":{\"image_cls\":\"-1\",\"image_name\":\"异常\",\"intent_cls\":\"-1\",\"intent_name\":\"异常\",\"intent_signal\":\"0\"},\"writer_intent\":{\"content\":\"\"}}",
+                                "ori_query": "生成 20岁的 白发美女",
+                                "generate_mode": "stream",
+                                "agent_mode": "0",
+                                "scene": "zaodian_image_generate_image"
+                            }
+                        },
+                        {
+                            "mime_type": "bar/progress",
+                            "status": "complete",
+                            "meta_data": {
+                                "type": "generated"
+                            }
+                        },
+                        {
+                            "mime_type": "bar/iframe",
+                            "status": "complete",
+                            "meta_data": {
+                                "sources": []
+                            }
+                        },
+                        {
+                            "content": "好嘞！这就为您描绘一位20岁、气质迷人的白发美女，请稍等片刻。\n\n[(ai_generate_image_list_1)]",
+                            "mime_type": "multi_load/iframe",
+                            "status": "complete",
+                            "meta_data": {
+                                "multi_load": [
+                                    {
+                                        "html": {
+                                            "image": [],
+                                            "callFnConfig": [],
+                                            "sc_html": "<div class=\"card card_card_images\" data-tpl=\"card_images~index\" data-tpl-version=\"0.0.7-1769073350032\" id=\"card_card_images_53266_43351_53266_41314\"><div><div class=\"multi-images-3Ui27\"><div class=\"image-grid-2qQgZ\" data-sc-action=\"onClick\"><img src=\"https://workspace-zb-cdn.qianwen.com/d9d54876d5bd49efb5b24d63a6f21b3c%2Fo%2F1784738978159.webp.jpg?auth_key=1787334960-0-0-ffbd4154f1d2a32fd8e02cdcfc2372fa\" class=\"image-1VvYQ\"/></div><div class=\"image-grid-2qQgZ\" data-sc-action=\"onClick\"><img src=\"https://workspace-zb-cdn.qianwen.com/afe3b6b928524f82b722e9967e4cba5b%2Fo%2F1784738978158.webp.jpg?auth_key=1787334300-0-0-b7b8a2ddc33de17b837d50725eaafad9\" class=\"image-1VvYQ\"/></div><div class=\"image-grid-2qQgZ\" data-sc-action=\"onClick\"><img src=\"https://workspace-zb-cdn.qianwen.com/40ead92efbdd4cd682095b4f87511d87%2Fo%2F1784738978161.webp.jpg?auth_key=1787333700-0-0-6ff12667699414af342680e6ea63bbe8\" class=\"image-1VvYQ\"/></div><div class=\"image-grid-2qQgZ\" data-sc-action=\"onClick\"><img src=\"https://workspace-zb-cdn.qianwen.com/7518e51e1c0046a5b0cca4c1d91336e0%2Fo%2F1784738978152.webp.jpg?auth_key=1787332080-0-0-23475cbe717e47bc588e59eb71f1f0d7\" class=\"image-1VvYQ\"/></div></div></div></div>",
+                                            "css": [
+                                                {
+                                                    "size": 9123,
+                                                    "prefetch": true,
+                                                    "name": "bizCss",
+                                                    "id": "https://g.alicdn.com/sm-frontend/card_images/client/static/css/index.c4044.css",
+                                                    "cdn": "https://g.alicdn.com/sm-frontend/card_images/client/static/css/index.c4044.css",
+                                                    "version": "index.c4044.css",
+                                                    "content": "<style type=\"text/css\">.two-images-sQaYr{--total-width:var(--message-content-width,89.33333vw);--half-width:calc(var(--total-width)/2);width:var(--total-width);height:var(--total-width);max-width:117.33333vw;max-height:117.33333vw;border-radius:2.13333vw;overflow:hidden;display:flex;justify-content:space-between;align-items:center;gap:.53333vw;height:var(--half-width);max-height:58.66667vw}.browser-special-class .two-images-sQaYr,.quark-pc-special-class .two-images-sQaYr{--total-width:var(--message-content-width,335px);max-width:440px;max-height:440px;border-radius:8px;gap:2px;max-height:220px}@media (min-width:405px){.two-images-sQaYr{--total-width:var(--message-content-width,361.8px);max-width:475.2px;max-height:475.2px;border-radius:8.64px;gap:2.16px;max-height:237.6px}}.three-images-3bRqt{--total-width:var(--message-content-width,89.33333vw);--half-width:calc(var(--total-width)/2);width:var(--total-width);height:var(--total-width);max-width:117.33333vw;max-height:117.33333vw;border-radius:2.13333vw;overflow:hidden;display:flex;justify-content:space-between;align-items:center;gap:.53333vw;height:calc(var(--total-width)*2/3);max-height:78.22222vw}.browser-special-class .three-images-3bRqt,.quark-pc-special-class .three-images-3bRqt{--total-width:var(--message-content-width,335px);max-width:440px;max-height:440px;border-radius:8px;gap:2px;max-height:293.3px}@media (min-width:405px){.three-images-3bRqt{--total-width:var(--message-content-width,361.8px);max-width:475.2px;max-height:475.2px;border-radius:8.64px;gap:2.16px;max-height:316.8px}}.multi-images-3Ui27{--total-width:var(--message-content-width,89.33333vw);--half-width:calc(var(--total-width)/2);width:var(--total-width);height:var(--total-width);max-width:117.33333vw;max-height:117.33333vw;border-radius:2.13333vw;overflow:hidden;display:flex;justify-content:space-between;align-items:center;gap:.53333vw;display:grid;grid-template-columns:repeat(2,1fr);grid-template-rows:repeat(2,1fr);aspect-ratio:1}.browser-special-class .multi-images-3Ui27,.quark-pc-special-class .multi-images-3Ui27{--total-width:var(--message-content-width,335px);max-width:440px;max-height:440px;border-radius:8px;gap:2px}@media (min-width:405px){.multi-images-3Ui27{--total-width:var(--message-content-width,361.8px);max-width:475.2px;max-height:475.2px;border-radius:8.64px;gap:2.16px}}.left-three-col-1qmse{width:calc(var(--total-width)*2/3);height:100%;position:relative}.right-three-col-iuRaA{flex:1;display:flex;flex-direction:column;gap:.53333vw;height:100%}.browser-special-class .right-three-col-iuRaA,.quark-pc-special-class .right-three-col-iuRaA{gap:2px}@media (min-width:405px){.right-three-col-iuRaA{gap:2.16px}}.image-container-2CBj4{position:relative;width:100%;height:100%;flex:1}.image-1VvYQ{width:100%;height:100%;object-fit:cover;display:block}.image-container-col-bT85g{position:relative;width:100%;height:50%;flex:1}.image-grid-2qQgZ{position:relative;width:100%;height:100%;overflow:hidden}.above-four-container-3fFVc{position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.4);display:flex;justify-content:center;align-items:center;font-family:PingFangSC-Medium;font-size:4.26667vw;color:var(--color-White_Constant);text-align:center;font-weight:500}.browser-special-class .above-four-container-3fFVc,.quark-pc-special-class .above-four-container-3fFVc{font-size:16px}@media (min-width:405px){.above-four-container-3fFVc{font-size:17.28px}}.title-2XXA2{position:absolute;bottom:2.13333vw;left:2.13333vw;font-family:PingFangSC-Semibold;font-size:2.93333vw;color:var(--color-White_Constant);letter-spacing:0;font-weight:600;max-width:35.2vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:.53333vw 1.33333vw;background:rgba(34,34,34,.5);border-radius:1.06667vw;box-sizing:border-box}.browser-special-class .title-2XXA2,.quark-pc-special-class .title-2XXA2{bottom:8px;left:8px;font-size:11px;max-width:132px;padding:2px 5px;border-radius:4px}@media (min-width:405px){.title-2XXA2{bottom:8.64px;left:8.64px;font-size:11.88px;max-width:142.56px;padding:2.16px 5.4px;border-radius:4.32px}}.container-uHf5Y{position:relative}.image-2BRxe{border-radius:2.13333vw;max-width:440px;display:block;object-fit:cover}.browser-special-class .image-2BRxe,.quark-pc-special-class .image-2BRxe{border-radius:8px}@media (min-width:405px){.image-2BRxe{border-radius:8.64px}}.img-1-2coMM{width:var(--message-content-width,89.33333vw)}.browser-special-class .img-1-2coMM,.quark-pc-special-class .img-1-2coMM{width:var(--message-content-width,335px)}@media (min-width:405px){.img-1-2coMM{width:var(--message-content-width,361.8px)}}.img-2-Zp8Yo{height:59.46667vw}.browser-special-class .img-2-Zp8Yo,.quark-pc-special-class .img-2-Zp8Yo{height:223px}@media (min-width:405px){.img-2-Zp8Yo{height:240.84px}}.img-3-1P98W{height:59.46667vw;width:29.86667vw}.browser-special-class .img-3-1P98W,.quark-pc-special-class .img-3-1P98W{height:223px;width:112px}@media (min-width:405px){.img-3-1P98W{height:240.84px;width:120.96px}}.title-1C6Dk{position:absolute;bottom:2.13333vw;left:2.13333vw;font-family:PingFangSC-Semibold;font-size:2.93333vw;color:var(--color-White_Constant);letter-spacing:0;font-weight:600;max-width:35.2vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:.53333vw 1.33333vw;background:rgba(34,34,34,.5);border-radius:1.06667vw;box-sizing:border-box}.browser-special-class .title-1C6Dk,.quark-pc-special-class .title-1C6Dk{bottom:8px;left:8px;font-size:11px;max-width:132px;padding:2px 5px;border-radius:4px}@media (min-width:405px){.title-1C6Dk{bottom:8.64px;left:8.64px;font-size:11.88px;max-width:142.56px;padding:2.16px 5.4px;border-radius:4.32px}}.long-image-3f9Ap{position:absolute;top:2.13333vw;left:2.13333vw;font-family:PingFangSC-Semibold;font-size:2.93333vw;color:var(--color-White_Constant);letter-spacing:0;font-weight:600;max-width:35.2vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:.53333vw 1.33333vw;background:rgba(34,34,34,.5);border-radius:1.06667vw;box-sizing:border-box}.browser-special-class .long-image-3f9Ap,.quark-pc-special-class .long-image-3f9Ap{top:8px;left:8px;font-size:11px;max-width:132px;padding:2px 5px;border-radius:4px}@media (min-width:405px){.long-image-3f9Ap{top:8.64px;left:8.64px;font-size:11.88px;max-width:142.56px;padding:2.16px 5.4px;border-radius:4.32px}}.quark-pc-special-class .card{--color-Black_Constant:var(--quark-style-black-fixed-color,#000);--color-Button_Blue:var(--quark-style-theme-color-color,#0d53ff);--color-Button_Grey:var(--quark-style-gray-5-color,rgba(6,10,38,0.03));--color-Button_LightBlue:var(--quark-style-theme-color-10-color,rgba(13,83,255,0.07));--color-Button_LightRed:var(--quark-style-ash-orange-color,#fff9f8);--color-Green:var(--quark-style-cyan-color,#29becc);--color-Icon_Black:var(--quark-style-gray-90-opaque-color,#1f223c);--color-Icon_Blue:var(--quark-style-theme-color-color,#0d53ff);--color-Icon_Grey:var(--quark-style-gray-50-opaque-color,#828492);--color-Icon_White:var(--quark-style-white-color,#fff);--color-Icon_White_Constant:var(--quark-style-white-fixed-color,#fff);--color-Line:var(--quark-style-gray-10-color,rgba(6,10,38,0.06));--color-Line_Button:var(--quark-style-gray-20-color,rgba(6,10,38,0.12));--color-OnPage_Bg_Grey:var(--quark-style-gray-5-opaque-color,#f5f6f7);--color-OnPage_Bg_Grey1:var(--quark-style-ash-80-color,rgba(247,248,250,0.8));--color-OnPage_Bg_Grey2:var(--quark-style-ash-80-color,rgba(247,248,250,0.8));--color-OnPage_Bg_Grey3:var(--quark-style-ash-60-color,rgba(247,248,250,0.6));--color-OnPage_Bg_White:var(--quark-style-white-button-color,#fff);--color-OnPage_Bg_White1:var(--quark-style-white-color,#fff);--color-Page_Bg_Ai:var(--quark-style-ash-theme-color-color,#f7f9ff);--color-Page_Bg_Grey:var(--quark-style-gray-5-opaque-color,#f5f6f7);--color-Page_Bg_Grey1:var(--quark-style-ash-90-color,rgba(247,248,250,0.9));--color-Quark_Ai:var(--quark-style-purple-color,#432cdb);--color-Quark_Blue:var(--quark-style-theme-color-color,#0d53ff);--color-Text_Black:var(--quark-style-gray-90-opaque-color,#1f223c);--color-Text_Grey1:var(--quark-style-gray-60-opaque-color,#696c7d);--color-Text_Grey2:var(--quark-style-gray-40-opaque-color,#9c9da9);--color-Text_Grey3:var(--quark-style-gray-30-opaque-color,#c3c4cb);--color-Text_White_Constant:var(--quark-style-white-fixed-color,#fff);--color-Toast_white:var(--quark-style-white-color,#fff);--color-Warning_Red:var(--quark-style-red-color,#ff4040);--color-White_Constant:var(--quark-style-white-fixed-color,#fff);--color-gray10:var(--quark-style-gray-10-color,rgba(6,10,38,0.06));--color-Page_Bg_White:var(--quark-style-white-color,#fff);--color-Deep_Blue:var(--quark-style-sea-blue-color,#4d80ff)}.title-2hUxe{flex:none;font-family:PingFangSC-Regular;font-size:4.26667vw;color:var(--color-Icon_Black);line-height:6.93333vw;font-weight:400;margin-bottom:4.26667vw}.browser-special-class .title-2hUxe,.quark-pc-special-class .title-2hUxe{font-size:16px;line-height:26px;margin-bottom:16px}@media (min-width:405px){.title-2hUxe{font-size:17.28px;line-height:28.08px;margin-bottom:17.28px}}\n/*# sourceMappingURL=index.c4044.css.map */</style>"
+                                                }
+                                            ],
+                                            "param": {
+                                                "log": {
+                                                    "sc_name": "card_images"
+                                                }
+                                            },
+                                            "format": "html",
+                                            "js": [
+                                                {
+                                                    "fullContent": true,
+                                                    "name": "runScCore",
+                                                    "contentId": "",
+                                                    "prepend": true,
+                                                    "id": "_hydrate_core",
+                                                    "content": "<script>window._hydrate_core=window._hydrate_core||{useRegisterSc:!0,hydrateIdMap:{},hydrateRootDomIdList:[],run_sc(d){var t=d.hydrateId,e=d.rootDomId,r=d.hydrateUrl,a=!1;if(this.hydrateIdMap[t])a=!0,this.hydrateIdMap[t](d);else{var h=document.createElement(\"script\");h.src=r,document.head.appendChild(h)}this.hydrateRootDomIdList.push({hydrateId:t,rootDomId:e,hydrateUrl:r,isHydrated:a})},register_sc(d,t){var e=d.hydrateId;this.hydrateIdMap[e]=t,this.hydrateRootDomIdList.forEach(function(d,r){d.hydrateId!==e||d.isHydrated||(d.isHydrated=!0,t(d))})}};</script>"
+                                                },
+                                                {
+                                                    "size": 18852,
+                                                    "name": "hydrateData",
+                                                    "id": "card_images_53266_43351_53266_41314",
+                                                    "content": "<script type=\"application/json\" id=\"s-data-card_images_53266_43351_53266_41314\" data-used-by=\"hydrate\">{\"data\":{\"initialData\":{\"data\":{\"type\":\"ai_generate_image_list\",\"content\":{\"list\":[{\"image_height\":1280,\"image_width\":960,\"image_url\":\"https://workspace-zb-cdn.qianwen.com/5bb2f69edd2c4fa8b8feabbaecbe0398%2Fo%2F1784738978204.png?auth_key=1787333880-0-0-e51f61ffbf38f5b96f681adde32dc17e\",\"thumbnail_url\":\"https://workspace-zb-cdn.qianwen.com/d9d54876d5bd49efb5b24d63a6f21b3c%2Fo%2F1784738978159.webp.jpg?auth_key=1787334960-0-0-ffbd4154f1d2a32fd8e02cdcfc2372fa\",\"watermark_url\":\"https://workspace-zb-cdn.qianwen.com/2b111c6a26ea468ab270f9f4966e6020%2Fo%2F1784738978268.png?auth_key=1787334360-0-0-79dc5a5dd083ae7696fca83903a625e1\"},{\"image_height\":1280,\"image_width\":960,\"image_url\":\"https://workspace-zb-cdn.qianwen.com/7efad9ab9027497d84ac02344f229f86%2Fo%2F1784738978220.png?auth_key=1787334120-0-0-540ffd8ecd1ee952a59498818d85a836\",\"thumbnail_url\":\"https://workspace-zb-cdn.qianwen.com/afe3b6b928524f82b722e9967e4cba5b%2Fo%2F1784738978158.webp.jpg?auth_key=1787334300-0-0-b7b8a2ddc33de17b837d50725eaafad9\",\"watermark_url\":\"https://workspace-zb-cdn.qianwen.com/ca56d6e864834bd4a66a62453ad4d3da%2Fo%2F1784738978176.png?auth_key=1787335140-0-0-1cb623b33a9cce312cd33f456d1aa175\"},{\"image_height\":1280,\"image_width\":960,\"image_url\":\"https://workspace-zb-cdn.qianwen.com/81d0ff99ae6a43768dbc618a168f2e82%2Fo%2F1784738978208.png?auth_key=1787333580-0-0-f78cc06e71568feb64bd43363e45b273\",\"thumbnail_url\":\"https://workspace-zb-cdn.qianwen.com/40ead92efbdd4cd682095b4f87511d87%2Fo%2F1784738978161.webp.jpg?auth_key=1787333700-0-0-6ff12667699414af342680e6ea63bbe8\",\"watermark_url\":\"https://workspace-zb-cdn.qianwen.com/24c45ffcb43746fa85ce5e1e69453cb1%2Fo%2F1784738978194.png?auth_key=1787331900-0-0-42189ceef47df3aff88bdd8453414a1c\"},{\"image_height\":1280,\"image_width\":960,\"image_url\":\"https://workspace-zb-cdn.qianwen.com/9176c2a936f8409db890c22d35d8e316%2Fo%2F1784738978232.png?auth_key=1787332740-0-0-9c3c0911ccfa57b41ffc81e50f86a499\",\"thumbnail_url\":\"https://workspace-zb-cdn.qianwen.com/7518e51e1c0046a5b0cca4c1d91336e0%2Fo%2F1784738978152.webp.jpg?auth_key=1787332080-0-0-23475cbe717e47bc588e59eb71f1f0d7\",\"watermark_url\":\"https://workspace-zb-cdn.qianwen.com/364a465a4c05407984a978f2b276c528%2Fo%2F1784738978222.png?auth_key=1787333940-0-0-7cb39322002fd64913ffa93f1e043f92\"}]},\"source_seq\":\"ai_generate_image_list_1\"},\"chatId\":\"38020965df8f4273b6421b4710264ec8\",\"scContextData\":{\"scName\":\"card_images\",\"hid\":\"38020965df8f4273b6421b4710264ec8\",\"header\":{\"content-length\":\"66\",\"x5-uuid\":\"51ce701f4615d84c44bc7a37fddce52b\",\"origin\":\"https://www.qianwen.com\",\"x-forwarded-host\":\"chat2-api.qianwen.com\",\"x-remote-ip\":\"183.238.127.82\",\"x-client-scheme\":\"https\",\"host\":\"chat2-api.qianwen.com\",\"x-real-port\":\"53231\",\"ns-client-ip\":\"183.238.127.82\",\"content-type\":\"application/json\",\"x-chat-biz\":\"{\\\"chatId\\\":\\\"38020965df8f4273b6421b4710264ec8\\\",\\\"agentId\\\":\\\"\\\",\\\"enableWebp\\\":\\\"\\\",\\\"runtimeEnabled\\\":false,\\\"debugEnabled\\\":false,\\\"htmlRenderV2Allow\\\":false,\\\"htmlRenderV3Allow\\\":false,\\\"ssrCardV1\\\":false,\\\"csrCardV1\\\":false}\",\"web-server-type\":\"tengine-ingress\",\"proxy-x-forwarded-for\":\"183.238.127.82\",\"x-real-scheme\":\"https\",\"x-forwarded-proto\":\"https\",\"x-wua-code\":\"FF_WUA_EMPTY\",\"wl-proxy-client-ip\":\"183.238.127.82\",\"x5-ext-info\":\"{\\\"bx-flowtype\\\":\\\"PCWeb\\\",\\\"p-flowtype\\\":\\\"ajax\\\"}\",\"x5-ext-trans\":\"{\\\"bx-flowtype\\\":\\\"PCWeb\\\",\\\"p-flowtype\\\":\\\"ajax\\\"}\",\"x-wua-result\":\"{\\\"s\\\":\\\"FF_WUA_EMPTY\\\",\\\"b\\\":\\\"\\\",\\\"v\\\":\\\"\\\",\\\"g\\\":0,\\\"e\\\":\\\"\\\",\\\"d\\\":\\\"\\\",\\\"h\\\":\\\"\\\"}\",\"x-forwarded-for\":\"183.238.127.82\",\"x-chat-id\":\"38020965df8f4273b6421b4710264ec8\",\"eagleeye-traceid\":\"2150422a17847391532206840e0ac7\",\"x-real-ip\":\"183.238.127.82\",\"x-accesslayer-ip\":\"33.80.66.42\",\"x-sinfo\":\"on\",\"x-request-from\":\"aserver\",\"x-scheme\":\"https\",\"eagleeye-rpcid\":\"0.1\",\"user-agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36\"},\"envInfo\":{\"isQuark\":false,\"isScanking\":false,\"isAndroid\":false,\"isIOS\":false,\"envType\":\"prod\",\"version\":\"0\"}}},\"originalData\":{\"type\":\"ai_generate_image_list\",\"content\":{\"resource_infos\":[{\"refer_id\":\"ref1\",\"width\":960,\"id\":\"7351459e1c0249a3bd71bfe9bb747172\",\"url\":\"https://workspace-zb-cdn.qianwen.com/5bb2f69edd2c4fa8b8feabbaecbe0398%2Fo%2F1784738978204.png?auth_key=1787333880-0-0-e51f61ffbf38f5b96f681adde32dc17e\",\"height\":1280,\"md5\":\"zhGOgBbOjr1nmzspi6CkBA==\"},{\"refer_id\":\"ref2\",\"width\":960,\"id\":\"4a32525e991149038f3be1c651f6d0af\",\"url\":\"https://workspace-zb-cdn.qianwen.com/2b111c6a26ea468ab270f9f4966e6020%2Fo%2F1784738978268.png?auth_key=1787334360-0-0-79dc5a5dd083ae7696fca83903a625e1\",\"height\":1280,\"md5\":\"eS8fbXik+kEpLNqkpUggDQ==\"},{\"refer_id\":\"ref3\",\"width\":800,\"id\":\"6bdef41953984c8a9dd2d86ee4a835cc\",\"url\":\"https://workspace-zb-cdn.qianwen.com/d9d54876d5bd49efb5b24d63a6f21b3c%2Fo%2F1784738978159.webp.jpg?auth_key=1787334960-0-0-ffbd4154f1d2a32fd8e02cdcfc2372fa\",\"height\":1067,\"md5\":\"1BOyQOqt+Z1aYuw+abC+RA==\"},{\"refer_id\":\"ref4\",\"width\":960,\"id\":\"446c8edd771d4db1ab8fe2c6d146b343\",\"url\":\"https://workspace-zb-cdn.qianwen.com/7efad9ab9027497d84ac02344f229f86%2Fo%2F1784738978220.png?auth_key=1787334120-0-0-540ffd8ecd1ee952a59498818d85a836\",\"height\":1280,\"md5\":\"QwQqQjWKWJVZTSLNegMBOQ==\"},{\"refer_id\":\"ref5\",\"width\":960,\"id\":\"e010e57d72104adfbceb5c7f79a17386\",\"url\":\"https://workspace-zb-cdn.qianwen.com/ca56d6e864834bd4a66a62453ad4d3da%2Fo%2F1784738978176.png?auth_key=1787335140-0-0-1cb623b33a9cce312cd33f456d1aa175\",\"height\":1280,\"md5\":\"ZHarDfwHMdTWlIqKWgRduQ==\"},{\"refer_id\":\"ref6\",\"width\":800,\"id\":\"986c290c915a4dd99bf2c08406f61179\",\"url\":\"https://workspace-zb-cdn.qianwen.com/afe3b6b928524f82b722e9967e4cba5b%2Fo%2F1784738978158.webp.jpg?auth_key=1787334300-0-0-b7b8a2ddc33de17b837d50725eaafad9\",\"height\":1067,\"md5\":\"plomlEI/bUg9VChsiRvfPw==\"},{\"refer_id\":\"ref7\",\"width\":960,\"id\":\"117fa25d08944726af589653f1c31ef8\",\"url\":\"https://workspace-zb-cdn.qianwen.com/81d0ff99ae6a43768dbc618a168f2e82%2Fo%2F1784738978208.png?auth_key=1787333580-0-0-f78cc06e71568feb64bd43363e45b273\",\"height\":1280,\"md5\":\"XHCtsgZIXL66LIpT4ABobw==\"},{\"refer_id\":\"ref8\",\"width\":960,\"id\":\"6666fe3cc4654407b65d163084104d74\",\"url\":\"https://workspace-zb-cdn.qianwen.com/24c45ffcb43746fa85ce5e1e69453cb1%2Fo%2F1784738978194.png?auth_key=1787331900-0-0-42189ceef47df3aff88bdd8453414a1c\",\"height\":1280,\"md5\":\"ExOJWODLf+ZiidlBm+KMkA==\"},{\"refer_id\":\"ref9\",\"width\":800,\"id\":\"efd0f0a3397746a7a357f37149b02e12\",\"url\":\"https://workspace-zb-cdn.qianwen.com/40ead92efbdd4cd682095b4f87511d87%2Fo%2F1784738978161.webp.jpg?auth_key=1787333700-0-0-6ff12667699414af342680e6ea63bbe8\",\"height\":1067,\"md5\":\"e8khBG8e5Pf7IsWDgLpy7Q==\"},{\"refer_id\":\"ref10\",\"width\":960,\"id\":\"23394faeb1df4220a4ebb03ccbd51d71\",\"url\":\"https://workspace-zb-cdn.qianwen.com/9176c2a936f8409db890c22d35d8e316%2Fo%2F1784738978232.png?auth_key=1787332740-0-0-9c3c0911ccfa57b41ffc81e50f86a499\",\"height\":1280,\"md5\":\"jOtZzdtvdxLbJUuoj3klsg==\"},{\"refer_id\":\"ref11\",\"width\":960,\"id\":\"9313b46363b34d12b0f55cb5e1e0cf36\",\"url\":\"https://workspace-zb-cdn.qianwen.com/364a465a4c05407984a978f2b276c528%2Fo%2F1784738978222.png?auth_key=1787333940-0-0-7cb39322002fd64913ffa93f1e043f92\",\"height\":1280,\"md5\":\"E+lbZ96uHNpf3njL50x9zQ==\"},{\"refer_id\":\"ref12\",\"width\":800,\"id\":\"3f0db47d07994536ae3b1c6cfaa83325\",\"url\":\"https://workspace-zb-cdn.qianwen.com/7518e51e1c0046a5b0cca4c1d91336e0%2Fo%2F1784738978152.webp.jpg?auth_key=1787332080-0-0-23475cbe717e47bc588e59eb71f1f0d7\",\"height\":1067,\"md5\":\"dcxNf7XTm8ngPwor36/2XQ==\"}],\"complete_description\":\"根据你刚才的提问“__20岁的白发美女__”，视频已经生成好啦！\",\"generate_model_name\":\"\",\"task_id\":\"4eb9224f8830480e9ec59853c1be0412\",\"scene\":\"qwen2_t2i\",\"image_num\":4,\"start_time\":1784738967086,\"layout_list\":[{\"image\":[\"ref1\"],\"thumbnail\":[\"ref3\"],\"ref_image_ids\":[],\"agent_material_id\":\"e744408ff6be4442bf6c7d077b7a1124\",\"type\":\"generate_image\",\"watermark_image\":[\"ref2\"],\"resource_fields\":[\"image\",\"watermark_image\",\"thumbnail\"]},{\"image\":[\"ref4\"],\"thumbnail\":[\"ref6\"],\"ref_image_ids\":[],\"agent_material_id\":\"04501c72f5d74194b83171567190da53\",\"type\":\"generate_image\",\"watermark_image\":[\"ref5\"],\"resource_fields\":[\"image\",\"watermark_image\",\"thumbnail\"]},{\"image\":[\"ref7\"],\"thumbnail\":[\"ref9\"],\"ref_image_ids\":[],\"agent_material_id\":\"ab9a80a6225b4f8193496c7888fe89d1\",\"type\":\"generate_image\",\"watermark_image\":[\"ref8\"],\"resource_fields\":[\"image\",\"watermark_image\",\"thumbnail\"]},{\"image\":[\"ref10\"],\"thumbnail\":[\"ref12\"],\"ref_image_ids\":[],\"agent_material_id\":\"4e4879b59ac741338886a2dace374a4d\",\"type\":\"generate_image\",\"watermark_image\":[\"ref11\"],\"resource_fields\":[\"image\",\"watermark_image\",\"thumbnail\"]}],\"extra_info\":{\"disable_publish\":0,\"offset\":1784738967086,\"type\":\"TEXT_TO_IMG\",\"category\":\"image_generation\",\"content\":{\"gmt_create\":1784738967086,\"disable_publish\":0,\"record_id\":\"4eb9224f8830480e9ec59853c1be0412\",\"user_tags\":[\"normal\"],\"estimated_completion_time\":\"2026-07-23T00:49:37.639+0800\",\"num\":4,\"extra\":{\"is_cameo\":false,\"can_reedit\":true,\"query\":\"20岁的白发美女\",\"root_model\":\"qwen2\",\"params\":{\"attachments\":[],\"size\":\"3:4\",\"source_cameo_profiles\":[]},\"seen\":true,\"scene\":\"qwen2_t2i\",\"bgm_audios\":[],\"req_id\":\"38020965df8f4273b6421b4710264ec8\",\"model_name\":\"Qwen-Image 2.0\",\"origin_query\":\"生成 20岁的 白发美女\",\"result_images\":[{\"thumbnail_url\":\"https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976420-04bd263128fd4651a70033db301d3c9d.png?auth_key=1786034977-0-0-d685e2f31a7e78cac4b349e25e8beb4c&x-oss-process=image%2Fformat%2Cwebp%2Fresize%2Cs_800\",\"i2iIntent\":\"无\",\"url\":\"http://ai-studio-resource.cn-zhangjiakou.oss.aliyuncs.com/d/qwen/3531b5eb082a1b5c6865d1f619e9246e/1784738976420-04bd263128fd4651a70033db301d3c9d.png?Expires=1786034977&OSSAccessKeyId=LTAI5tB1ULAmj55yDBf6XJ9T&Signature=XBavQBs9cqTFRZA55bEhh5zt55A%3D\",\"is_multi_intent\":false,\"ref_image_ids\":[],\"cdn_url\":\"https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976420-04bd263128fd4651a70033db301d3c9d.png?auth_key=1786034977-0-0-d685e2f31a7e78cac4b349e25e8beb4c\",\"preview_url\":\"https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976420-04bd263128fd4651a70033db301d3c9d.png?auth_key=1786034977-0-0-d685e2f31a7e78cac4b349e25e8beb4c&x-oss-process=image%2Fformat%2Cwebp\",\"width\":960,\"download_url\":\"https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976681-1e8f055a39484cd1a8c08e24f4b4d09b.png?auth_key=1786034977-0-0-b8e8a1f5868127c726bf72663411b152\",\"material_id\":\"e744408ff6be4442bf6c7d077b7a1124\",\"prompt\":\"20岁的白发美女\",\"height\":1280,\"ratio\":\"3:4\",\"is_nowater_mark_intent\":false},{\"thumbnail_url\":\"https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976418-ea876d028118457a9e2798cb6061f591.png?auth_key=1786034977-0-0-ab75f73b73265b9b1f9b8bf9b7088de1&x-oss-process=image%2Fformat%2Cwebp%2Fresize%2Cs_800\",\"i2iIntent\":\"无\",\"url\":\"http://ai-studio-resource.cn-zhangjiakou.oss.aliyuncs.com/d/qwen/3531b5eb082a1b5c6865d1f619e9246e/1784738976418-ea876d028118457a9e2798cb6061f591.png?Expires=1786034977&OSSAccessKeyId=LTAI5tB1ULAmj55yDBf6XJ9T&Signature=R8bGT579QBmeXGOq2Yk52pcAMy4%3D\",\"is_multi_intent\":false,\"ref_image_ids\":[],\"cdn_url\":\"https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976418-ea876d028118457a9e2798cb6061f591.png?auth_key=1786034977-0-0-ab75f73b73265b9b1f9b8bf9b7088de1\",\"preview_url\":\"https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976418-ea876d028118457a9e2798cb6061f591.png?auth_key=1786034977-0-0-ab75f73b73265b9b1f9b8bf9b7088de1&x-oss-process=image%2Fformat%2Cwebp\",\"width\":960,\"download_url\":\"https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976686-4f6063dbaf9f4f78ab9ad2c604b65d86.png?auth_key=1786034977-0-0-56c602c7708fc4d48d695e678433c469\",\"material_id\":\"04501c72f5d74194b83171567190da53\",\"prompt\":\"20岁的白发美女\",\"height\":1280,\"ratio\":\"3:4\",\"is_nowater_mark_intent\":false},{\"thumbnail_url\":\"https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976423-52868b42a3854645aa23c4070c612f8f.png?auth_key=1786034977-0-0-bd0004374af2e4e6c9d2780784889b6f&x-oss-process=image%2Fformat%2Cwebp%2Fresize%2Cs_800\",\"i2iIntent\":\"无\",\"url\":\"http://ai-studio-resource.cn-zhangjiakou.oss.aliyuncs.com/d/qwen/3531b5eb082a1b5c6865d1f619e9246e/1784738976423-52868b42a3854645aa23c4070c612f8f.png?Expires=1786034977&OSSAccessKeyId=LTAI5tB1ULAmj55yDBf6XJ9T&Signature=MECWhsuVloreFFfXvPoFKjbbYHo%3D\",\"is_multi_intent\":false,\"ref_image_ids\":[],\"cdn_url\":\"https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976423-52868b42a3854645aa23c4070c612f8f.png?auth_key=1786034977-0-0-bd0004374af2e4e6c9d2780784889b6f\",\"preview_url\":\"https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976423-52868b42a3854645aa23c4070c612f8f.png?auth_key=1786034977-0-0-bd0004374af2e4e6c9d2780784889b6f&x-oss-process=image%2Fformat%2Cwebp\",\"width\":960,\"download_url\":\"https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976685-0509fd1d2be04f5a90da0bde43c5b110.png?auth_key=1786034977-0-0-716d560924451a674b17a035c16c042f\",\"material_id\":\"ab9a80a6225b4f8193496c7888fe89d1\",\"prompt\":\"20岁的白发美女\",\"height\":1280,\"ratio\":\"3:4\",\"is_nowater_mark_intent\":false},{\"thumbnail_url\":\"https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976417-ce58bec0dfc34f37bc328bda81ede9c3.png?auth_key=1786034977-0-0-f70f45028bf18af275a11ce88c866c3f&x-oss-process=image%2Fformat%2Cwebp%2Fresize%2Cs_800\",\"i2iIntent\":\"无\",\"url\":\"http://ai-studio-resource.cn-zhangjiakou.oss.aliyuncs.com/d/qwen/3531b5eb082a1b5c6865d1f619e9246e/1784738976417-ce58bec0dfc34f37bc328bda81ede9c3.png?Expires=1786034977&OSSAccessKeyId=LTAI5tB1ULAmj55yDBf6XJ9T&Signature=q0zIQyLNyXbhFzECOdmcwA7bFwA%3D\",\"is_multi_intent\":false,\"ref_image_ids\":[],\"cdn_url\":\"https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976417-ce58bec0dfc34f37bc328bda81ede9c3.png?auth_key=1786034977-0-0-f70f45028bf18af275a11ce88c866c3f\",\"preview_url\":\"https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976417-ce58bec0dfc34f37bc328bda81ede9c3.png?auth_key=1786034977-0-0-f70f45028bf18af275a11ce88c866c3f&x-oss-process=image%2Fformat%2Cwebp\",\"width\":960,\"download_url\":\"https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976721-be517b15cd06490fa264c95a82827188.png?auth_key=1786034977-0-0-6db24448583da4ca58bc4694685cd541\",\"material_id\":\"4e4879b59ac741338886a2dace374a4d\",\"prompt\":\"20岁的白发美女\",\"height\":1280,\"ratio\":\"3:4\",\"is_nowater_mark_intent\":false}],\"model\":\"qwen2\"},\"task_id\":\"bce2a48bcc394084bc4b87bb950a0b6b\",\"title\":\"20岁的白发美女\",\"gmt_modified\":1784738977639,\"seen\":true,\"status\":1}},\"retry_description\":\"请再帮我生成一次\",\"display_list\":[{\"image\":[{\"width\":960,\"id\":\"7351459e1c0249a3bd71bfe9bb747172\",\"url\":\"https://workspace-zb-cdn.qianwen.com/5bb2f69edd2c4fa8b8feabbaecbe0398%2Fo%2F1784738978204.png?auth_key=1787333880-0-0-e51f61ffbf38f5b96f681adde32dc17e\",\"height\":1280}],\"thumbnail\":[{\"width\":800,\"id\":\"6bdef41953984c8a9dd2d86ee4a835cc\",\"url\":\"https://workspace-zb-cdn.qianwen.com/d9d54876d5bd49efb5b24d63a6f21b3c%2Fo%2F1784738978159.webp.jpg?auth_key=1787334960-0-0-ffbd4154f1d2a32fd8e02cdcfc2372fa\",\"height\":1067}],\"ref_image_ids\":[],\"agent_material_id\":\"e744408ff6be4442bf6c7d077b7a1124\",\"type\":\"generate_image\",\"watermark_image\":[{\"width\":960,\"id\":\"4a32525e991149038f3be1c651f6d0af\",\"url\":\"https://workspace-zb-cdn.qianwen.com/2b111c6a26ea468ab270f9f4966e6020%2Fo%2F1784738978268.png?auth_key=1787334360-0-0-79dc5a5dd083ae7696fca83903a625e1\",\"height\":1280}],\"resource_fields\":[\"image\",\"watermark_image\",\"thumbnail\"]},{\"image\":[{\"width\":960,\"id\":\"446c8edd771d4db1ab8fe2c6d146b343\",\"url\":\"https://workspace-zb-cdn.qianwen.com/7efad9ab9027497d84ac02344f229f86%2Fo%2F1784738978220.png?auth_key=1787334120-0-0-540ffd8ecd1ee952a59498818d85a836\",\"height\":1280}],\"thumbnail\":[{\"width\":800,\"id\":\"986c290c915a4dd99bf2c08406f61179\",\"url\":\"https://workspace-zb-cdn.qianwen.com/afe3b6b928524f82b722e9967e4cba5b%2Fo%2F1784738978158.webp.jpg?auth_key=1787334300-0-0-b7b8a2ddc33de17b837d50725eaafad9\",\"height\":1067}],\"ref_image_ids\":[],\"agent_material_id\":\"04501c72f5d74194b83171567190da53\",\"type\":\"generate_image\",\"watermark_image\":[{\"width\":960,\"id\":\"e010e57d72104adfbceb5c7f79a17386\",\"url\":\"https://workspace-zb-cdn.qianwen.com/ca56d6e864834bd4a66a62453ad4d3da%2Fo%2F1784738978176.png?auth_key=1787335140-0-0-1cb623b33a9cce312cd33f456d1aa175\",\"height\":1280}],\"resource_fields\":[\"image\",\"watermark_image\",\"thumbnail\"]},{\"image\":[{\"width\":960,\"id\":\"117fa25d08944726af589653f1c31ef8\",\"url\":\"https://workspace-zb-cdn.qianwen.com/81d0ff99ae6a43768dbc618a168f2e82%2Fo%2F1784738978208.png?auth_key=1787333580-0-0-f78cc06e71568feb64bd43363e45b273\",\"height\":1280}],\"thumbnail\":[{\"width\":800,\"id\":\"efd0f0a3397746a7a357f37149b02e12\",\"url\":\"https://workspace-zb-cdn.qianwen.com/40ead92efbdd4cd682095b4f87511d87%2Fo%2F1784738978161.webp.jpg?auth_key=1787333700-0-0-6ff12667699414af342680e6ea63bbe8\",\"height\":1067}],\"ref_image_ids\":[],\"agent_material_id\":\"ab9a80a6225b4f8193496c7888fe89d1\",\"type\":\"generate_image\",\"watermark_image\":[{\"width\":960,\"id\":\"6666fe3cc4654407b65d163084104d74\",\"url\":\"https://workspace-zb-cdn.qianwen.com/24c45ffcb43746fa85ce5e1e69453cb1%2Fo%2F1784738978194.png?auth_key=1787331900-0-0-42189ceef47df3aff88bdd8453414a1c\",\"height\":1280}],\"resource_fields\":[\"image\",\"watermark_image\",\"thumbnail\"]},{\"image\":[{\"width\":960,\"id\":\"23394faeb1df4220a4ebb03ccbd51d71\",\"url\":\"https://workspace-zb-cdn.qianwen.com/9176c2a936f8409db890c22d35d8e316%2Fo%2F1784738978232.png?auth_key=1787332740-0-0-9c3c0911ccfa57b41ffc81e50f86a499\",\"height\":1280}],\"thumbnail\":[{\"width\":800,\"id\":\"3f0db47d07994536ae3b1c6cfaa83325\",\"url\":\"https://workspace-zb-cdn.qianwen.com/7518e51e1c0046a5b0cca4c1d91336e0%2Fo%2F1784738978152.webp.jpg?auth_key=1787332080-0-0-23475cbe717e47bc588e59eb71f1f0d7\",\"height\":1067}],\"ref_image_ids\":[],\"agent_material_id\":\"4e4879b59ac741338886a2dace374a4d\",\"type\":\"generate_image\",\"watermark_image\":[{\"width\":960,\"id\":\"9313b46363b34d12b0f55cb5e1e0cf36\",\"url\":\"https://workspace-zb-cdn.qianwen.com/364a465a4c05407984a978f2b276c528%2Fo%2F1784738978222.png?auth_key=1787333940-0-0-7cb39322002fd64913ffa93f1e043f92\",\"height\":1280}],\"resource_fields\":[\"image\",\"watermark_image\",\"thumbnail\"]}],\"prompt\":\"20岁的白发美女\",\"status\":\"complete\",\"ratio\":\"3:4\",\"estimated_time\":1784738977639},\"source_seq\":\"ai_generate_image_list_1\"}},\"extraData\":{\"device\":\"mobile\",\"scId\":\"card_images_53266_43351_53266_41314\",\"reqId\":\"38020965df8f4273b6421b4710264ec8\",\"updateTime\":1769073350032,\"envType\":\"prod\",\"_renderServerEnvType\":\"prod\"}}</script>"
+                                                },
+                                                {
+                                                    "size": 85901,
+                                                    "prefetch": true,
+                                                    "name": "runSc",
+                                                    "id": "runsc#card_images_53266_43351_53266_41314",
+                                                    "cdn": "https://g.alicdn.com/sm-frontend/card_images/client/static/js/index.56f3f.js",
+                                                    "version": "index.56f3f.js",
+                                                    "content": "<script>window._hydrate_core && window._hydrate_core.run_sc({log:{jsSize:105316,cssSize:9123,htmlSize:1200,totalSize:115639,changeDays:181.3,aggSize:16568,hydrateSize:18852,rt:33},hydrateId:\"card_images_index.56f3f.js\",rootDomId:\"card_images_53266_43351_53266_41314\",hydrateUrl:\"https://g.alicdn.com/sm-frontend/card_images/client/static/js/index.56f3f.js\",scInfo: {pos:null,hy:\"ai-agent\"}});</script>"
+                                                },
+                                                {
+                                                    "fullContent": true,
+                                                    "name": "renderSertverAddJsDebugLog",
+                                                    "contentId": "",
+                                                    "prepend": true,
+                                                    "id": "38020965df8f4273b6421b4710264ec81784739153295",
+                                                    "type": "js",
+                                                    "content": "<script type=\"text/javascript\">window['javaToNodeDataList'] = window['javaToNodeDataList'] || [];\n         window['javaToNodeDataList'].push({\"reqId\":\"38020965df8f4273b6421b4710264ec8\",\"hid\":\"38020965df8f4273b6421b4710264ec8\",\"templateId\":\"card_images\",\"scName\":\"card_images\",\"bodyParam\":{\"aggData\":{\"sc_name\":\"card_images\",\"data\":{\"type\":\"ai_generate_image_list\",\"content\":{\"resource_infos\":[{\"refer_id\":\"ref1\",\"width\":960,\"id\":\"7351459e1c0249a3bd71bfe9bb747172\",\"url\":\"https://workspace-zb-cdn.qianwen.com/5bb2f69edd2c4fa8b8feabbaecbe0398%2Fo%2F1784738978204.png?auth_key=1787333880-0-0-e51f61ffbf38f5b96f681adde32dc17e\",\"height\":1280,\"md5\":\"zhGOgBbOjr1nmzspi6CkBA==\"},{\"refer_id\":\"ref2\",\"width\":960,\"id\":\"4a32525e991149038f3be1c651f6d0af\",\"url\":\"https://workspace-zb-cdn.qianwen.com/2b111c6a26ea468ab270f9f4966e6020%2Fo%2F1784738978268.png?auth_key=1787334360-0-0-79dc5a5dd083ae7696fca83903a625e1\",\"height\":1280,\"md5\":\"eS8fbXik+kEpLNqkpUggDQ==\"},{\"refer_id\":\"ref3\",\"width\":800,\"id\":\"6bdef41953984c8a9dd2d86ee4a835cc\",\"url\":\"https://workspace-zb-cdn.qianwen.com/d9d54876d5bd49efb5b24d63a6f21b3c%2Fo%2F1784738978159.webp.jpg?auth_key=1787334960-0-0-ffbd4154f1d2a32fd8e02cdcfc2372fa\",\"height\":1067,\"md5\":\"1BOyQOqt+Z1aYuw+abC+RA==\"},{\"refer_id\":\"ref4\",\"width\":960,\"id\":\"446c8edd771d4db1ab8fe2c6d146b343\",\"url\":\"https://workspace-zb-cdn.qianwen.com/7efad9ab9027497d84ac02344f229f86%2Fo%2F1784738978220.png?auth_key=1787334120-0-0-540ffd8ecd1ee952a59498818d85a836\",\"height\":1280,\"md5\":\"QwQqQjWKWJVZTSLNegMBOQ==\"},{\"refer_id\":\"ref5\",\"width\":960,\"id\":\"e010e57d72104adfbceb5c7f79a17386\",\"url\":\"https://workspace-zb-cdn.qianwen.com/ca56d6e864834bd4a66a62453ad4d3da%2Fo%2F1784738978176.png?auth_key=1787335140-0-0-1cb623b33a9cce312cd33f456d1aa175\",\"height\":1280,\"md5\":\"ZHarDfwHMdTWlIqKWgRduQ==\"},{\"refer_id\":\"ref6\",\"width\":800,\"id\":\"986c290c915a4dd99bf2c08406f61179\",\"url\":\"https://workspace-zb-cdn.qianwen.com/afe3b6b928524f82b722e9967e4cba5b%2Fo%2F1784738978158.webp.jpg?auth_key=1787334300-0-0-b7b8a2ddc33de17b837d50725eaafad9\",\"height\":1067,\"md5\":\"plomlEI/bUg9VChsiRvfPw==\"},{\"refer_id\":\"ref7\",\"width\":960,\"id\":\"117fa25d08944726af589653f1c31ef8\",\"url\":\"https://workspace-zb-cdn.qianwen.com/81d0ff99ae6a43768dbc618a168f2e82%2Fo%2F1784738978208.png?auth_key=1787333580-0-0-f78cc06e71568feb64bd43363e45b273\",\"height\":1280,\"md5\":\"XHCtsgZIXL66LIpT4ABobw==\"},{\"refer_id\":\"ref8\",\"width\":960,\"id\":\"6666fe3cc4654407b65d163084104d74\",\"url\":\"https://workspace-zb-cdn.qianwen.com/24c45ffcb43746fa85ce5e1e69453cb1%2Fo%2F1784738978194.png?auth_key=1787331900-0-0-42189ceef47df3aff88bdd8453414a1c\",\"height\":1280,\"md5\":\"ExOJWODLf+ZiidlBm+KMkA==\"},{\"refer_id\":\"ref9\",\"width\":800,\"id\":\"efd0f0a3397746a7a357f37149b02e12\",\"url\":\"https://workspace-zb-cdn.qianwen.com/40ead92efbdd4cd682095b4f87511d87%2Fo%2F1784738978161.webp.jpg?auth_key=1787333700-0-0-6ff12667699414af342680e6ea63bbe8\",\"height\":1067,\"md5\":\"e8khBG8e5Pf7IsWDgLpy7Q==\"},{\"refer_id\":\"ref10\",\"width\":960,\"id\":\"23394faeb1df4220a4ebb03ccbd51d71\",\"url\":\"https://workspace-zb-cdn.qianwen.com/9176c2a936f8409db890c22d35d8e316%2Fo%2F1784738978232.png?auth_key=1787332740-0-0-9c3c0911ccfa57b41ffc81e50f86a499\",\"height\":1280,\"md5\":\"jOtZzdtvdxLbJUuoj3klsg==\"},{\"refer_id\":\"ref11\",\"width\":960,\"id\":\"9313b46363b34d12b0f55cb5e1e0cf36\",\"url\":\"https://workspace-zb-cdn.qianwen.com/364a465a4c05407984a978f2b276c528%2Fo%2F1784738978222.png?auth_key=1787333940-0-0-7cb39322002fd64913ffa93f1e043f92\",\"height\":1280,\"md5\":\"E+lbZ96uHNpf3njL50x9zQ==\"},{\"refer_id\":\"ref12\",\"width\":800,\"id\":\"3f0db47d07994536ae3b1c6cfaa83325\",\"url\":\"https://workspace-zb-cdn.qianwen.com/7518e51e1c0046a5b0cca4c1d91336e0%2Fo%2F1784738978152.webp.jpg?auth_key=1787332080-0-0-23475cbe717e47bc588e59eb71f1f0d7\",\"height\":1067,\"md5\":\"dcxNf7XTm8ngPwor36/2XQ==\"}],\"complete_description\":\"根据你刚才的提问“__20岁的白发美女__”，视频已经生成好啦！\",\"generate_model_name\":\"\",\"task_id\":\"4eb9224f8830480e9ec59853c1be0412\",\"scene\":\"qwen2_t2i\",\"image_num\":4,\"start_time\":1784738967086,\"layout_list\":[{\"image\":[\"ref1\"],\"thumbnail\":[\"ref3\"],\"ref_image_ids\":[],\"agent_material_id\":\"e744408ff6be4442bf6c7d077b7a1124\",\"type\":\"generate_image\",\"watermark_image\":[\"ref2\"],\"resource_fields\":[\"image\",\"watermark_image\",\"thumbnail\"]},{\"image\":[\"ref4\"],\"thumbnail\":[\"ref6\"],\"ref_image_ids\":[],\"agent_material_id\":\"04501c72f5d74194b83171567190da53\",\"type\":\"generate_image\",\"watermark_image\":[\"ref5\"],\"resource_fields\":[\"image\",\"watermark_image\",\"thumbnail\"]},{\"image\":[\"ref7\"],\"thumbnail\":[\"ref9\"],\"ref_image_ids\":[],\"agent_material_id\":\"ab9a80a6225b4f8193496c7888fe89d1\",\"type\":\"generate_image\",\"watermark_image\":[\"ref8\"],\"resource_fields\":[\"image\",\"watermark_image\",\"thumbnail\"]},{\"image\":[\"ref10\"],\"thumbnail\":[\"ref12\"],\"ref_image_ids\":[],\"agent_material_id\":\"4e4879b59ac741338886a2dace374a4d\",\"type\":\"generate_image\",\"watermark_image\":[\"ref11\"],\"resource_fields\":[\"image\",\"watermark_image\",\"thumbnail\"]}],\"extra_info\":{\"disable_publish\":0,\"offset\":1784738967086,\"type\":\"TEXT_TO_IMG\",\"category\":\"image_generation\",\"content\":{\"gmt_create\":1784738967086,\"disable_publish\":0,\"record_id\":\"4eb9224f8830480e9ec59853c1be0412\",\"user_tags\":[\"normal\"],\"estimated_completion_time\":\"2026-07-23T00:49:37.639+0800\",\"num\":4,\"extra\":{\"is_cameo\":false,\"can_reedit\":true,\"query\":\"20岁的白发美女\",\"root_model\":\"qwen2\",\"params\":{\"attachments\":[],\"size\":\"3:4\",\"source_cameo_profiles\":[]},\"seen\":true,\"scene\":\"qwen2_t2i\",\"bgm_audios\":[],\"req_id\":\"38020965df8f4273b6421b4710264ec8\",\"model_name\":\"Qwen-Image 2.0\",\"origin_query\":\"生成 20岁的 白发美女\",\"result_images\":[{\"thumbnail_url\":\"https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976420-04bd263128fd4651a70033db301d3c9d.png?auth_key=1786034977-0-0-d685e2f31a7e78cac4b349e25e8beb4c&x-oss-process=image%2Fformat%2Cwebp%2Fresize%2Cs_800\",\"i2iIntent\":\"无\",\"url\":\"http://ai-studio-resource.cn-zhangjiakou.oss.aliyuncs.com/d/qwen/3531b5eb082a1b5c6865d1f619e9246e/1784738976420-04bd263128fd4651a70033db301d3c9d.png?Expires=1786034977&OSSAccessKeyId=LTAI5tB1ULAmj55yDBf6XJ9T&Signature=XBavQBs9cqTFRZA55bEhh5zt55A%3D\",\"is_multi_intent\":false,\"ref_image_ids\":[],\"cdn_url\":\"https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976420-04bd263128fd4651a70033db301d3c9d.png?auth_key=1786034977-0-0-d685e2f31a7e78cac4b349e25e8beb4c\",\"preview_url\":\"https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976420-04bd263128fd4651a70033db301d3c9d.png?auth_key=1786034977-0-0-d685e2f31a7e78cac4b349e25e8beb4c&x-oss-process=image%2Fformat%2Cwebp\",\"width\":960,\"download_url\":\"https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976681-1e8f055a39484cd1a8c08e24f4b4d09b.png?auth_key=1786034977-0-0-b8e8a1f5868127c726bf72663411b152\",\"material_id\":\"e744408ff6be4442bf6c7d077b7a1124\",\"prompt\":\"20岁的白发美女\",\"height\":1280,\"ratio\":\"3:4\",\"is_nowater_mark_intent\":false},{\"thumbnail_url\":\"https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976418-ea876d028118457a9e2798cb6061f591.png?auth_key=1786034977-0-0-ab75f73b73265b9b1f9b8bf9b7088de1&x-oss-process=image%2Fformat%2Cwebp%2Fresize%2Cs_800\",\"i2iIntent\":\"无\",\"url\":\"http://ai-studio-resource.cn-zhangjiakou.oss.aliyuncs.com/d/qwen/3531b5eb082a1b5c6865d1f619e9246e/1784738976418-ea876d028118457a9e2798cb6061f591.png?Expires=1786034977&OSSAccessKeyId=LTAI5tB1ULAmj55yDBf6XJ9T&Signature=R8bGT579QBmeXGOq2Yk52pcAMy4%3D\",\"is_multi_intent\":false,\"ref_image_ids\":[],\"cdn_url\":\"https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976418-ea876d028118457a9e2798cb6061f591.png?auth_key=1786034977-0-0-ab75f73b73265b9b1f9b8bf9b7088de1\",\"preview_url\":\"https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976418-ea876d028118457a9e2798cb6061f591.png?auth_key=1786034977-0-0-ab75f73b73265b9b1f9b8bf9b7088de1&x-oss-process=image%2Fformat%2Cwebp\",\"width\":960,\"download_url\":\"https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976686-4f6063dbaf9f4f78ab9ad2c604b65d86.png?auth_key=1786034977-0-0-56c602c7708fc4d48d695e678433c469\",\"material_id\":\"04501c72f5d74194b83171567190da53\",\"prompt\":\"20岁的白发美女\",\"height\":1280,\"ratio\":\"3:4\",\"is_nowater_mark_intent\":false},{\"thumbnail_url\":\"https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976423-52868b42a3854645aa23c4070c612f8f.png?auth_key=1786034977-0-0-bd0004374af2e4e6c9d2780784889b6f&x-oss-process=image%2Fformat%2Cwebp%2Fresize%2Cs_800\",\"i2iIntent\":\"无\",\"url\":\"http://ai-studio-resource.cn-zhangjiakou.oss.aliyuncs.com/d/qwen/3531b5eb082a1b5c6865d1f619e9246e/1784738976423-52868b42a3854645aa23c4070c612f8f.png?Expires=1786034977&OSSAccessKeyId=LTAI5tB1ULAmj55yDBf6XJ9T&Signature=MECWhsuVloreFFfXvPoFKjbbYHo%3D\",\"is_multi_intent\":false,\"ref_image_ids\":[],\"cdn_url\":\"https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976423-52868b42a3854645aa23c4070c612f8f.png?auth_key=1786034977-0-0-bd0004374af2e4e6c9d2780784889b6f\",\"preview_url\":\"https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976423-52868b42a3854645aa23c4070c612f8f.png?auth_key=1786034977-0-0-bd0004374af2e4e6c9d2780784889b6f&x-oss-process=image%2Fformat%2Cwebp\",\"width\":960,\"download_url\":\"https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976685-0509fd1d2be04f5a90da0bde43c5b110.png?auth_key=1786034977-0-0-716d560924451a674b17a035c16c042f\",\"material_id\":\"ab9a80a6225b4f8193496c7888fe89d1\",\"prompt\":\"20岁的白发美女\",\"height\":1280,\"ratio\":\"3:4\",\"is_nowater_mark_intent\":false},{\"thumbnail_url\":\"https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976417-ce58bec0dfc34f37bc328bda81ede9c3.png?auth_key=1786034977-0-0-f70f45028bf18af275a11ce88c866c3f&x-oss-process=image%2Fformat%2Cwebp%2Fresize%2Cs_800\",\"i2iIntent\":\"无\",\"url\":\"http://ai-studio-resource.cn-zhangjiakou.oss.aliyuncs.com/d/qwen/3531b5eb082a1b5c6865d1f619e9246e/1784738976417-ce58bec0dfc34f37bc328bda81ede9c3.png?Expires=1786034977&OSSAccessKeyId=LTAI5tB1ULAmj55yDBf6XJ9T&Signature=q0zIQyLNyXbhFzECOdmcwA7bFwA%3D\",\"is_multi_intent\":false,\"ref_image_ids\":[],\"cdn_url\":\"https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976417-ce58bec0dfc34f37bc328bda81ede9c3.png?auth_key=1786034977-0-0-f70f45028bf18af275a11ce88c866c3f\",\"preview_url\":\"https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976417-ce58bec0dfc34f37bc328bda81ede9c3.png?auth_key=1786034977-0-0-f70f45028bf18af275a11ce88c866c3f&x-oss-process=image%2Fformat%2Cwebp\",\"width\":960,\"download_url\":\"https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976721-be517b15cd06490fa264c95a82827188.png?auth_key=1786034977-0-0-6db24448583da4ca58bc4694685cd541\",\"material_id\":\"4e4879b59ac741338886a2dace374a4d\",\"prompt\":\"20岁的白发美女\",\"height\":1280,\"ratio\":\"3:4\",\"is_nowater_mark_intent\":false}],\"model\":\"qwen2\"},\"task_id\":\"bce2a48bcc394084bc4b87bb950a0b6b\",\"title\":\"20岁的白发美女\",\"gmt_modified\":1784738977639,\"seen\":true,\"status\":1}},\"retry_description\":\"请再帮我生成一次\",\"display_list\":[{\"image\":[{\"width\":960,\"id\":\"7351459e1c0249a3bd71bfe9bb747172\",\"url\":\"https://workspace-zb-cdn.qianwen.com/5bb2f69edd2c4fa8b8feabbaecbe0398%2Fo%2F1784738978204.png?auth_key=1787333880-0-0-e51f61ffbf38f5b96f681adde32dc17e\",\"height\":1280}],\"thumbnail\":[{\"width\":800,\"id\":\"6bdef41953984c8a9dd2d86ee4a835cc\",\"url\":\"https://workspace-zb-cdn.qianwen.com/d9d54876d5bd49efb5b24d63a6f21b3c%2Fo%2F1784738978159.webp.jpg?auth_key=1787334960-0-0-ffbd4154f1d2a32fd8e02cdcfc2372fa\",\"height\":1067}],\"ref_image_ids\":[],\"agent_material_id\":\"e744408ff6be4442bf6c7d077b7a1124\",\"type\":\"generate_image\",\"watermark_image\":[{\"width\":960,\"id\":\"4a32525e991149038f3be1c651f6d0af\",\"url\":\"https://workspace-zb-cdn.qianwen.com/2b111c6a26ea468ab270f9f4966e6020%2Fo%2F1784738978268.png?auth_key=1787334360-0-0-79dc5a5dd083ae7696fca83903a625e1\",\"height\":1280}],\"resource_fields\":[\"image\",\"watermark_image\",\"thumbnail\"]},{\"image\":[{\"width\":960,\"id\":\"446c8edd771d4db1ab8fe2c6d146b343\",\"url\":\"https://workspace-zb-cdn.qianwen.com/7efad9ab9027497d84ac02344f229f86%2Fo%2F1784738978220.png?auth_key=1787334120-0-0-540ffd8ecd1ee952a59498818d85a836\",\"height\":1280}],\"thumbnail\":[{\"width\":800,\"id\":\"986c290c915a4dd99bf2c08406f61179\",\"url\":\"https://workspace-zb-cdn.qianwen.com/afe3b6b928524f82b722e9967e4cba5b%2Fo%2F1784738978158.webp.jpg?auth_key=1787334300-0-0-b7b8a2ddc33de17b837d50725eaafad9\",\"height\":1067}],\"ref_image_ids\":[],\"agent_material_id\":\"04501c72f5d74194b83171567190da53\",\"type\":\"generate_image\",\"watermark_image\":[{\"width\":960,\"id\":\"e010e57d72104adfbceb5c7f79a17386\",\"url\":\"https://workspace-zb-cdn.qianwen.com/ca56d6e864834bd4a66a62453ad4d3da%2Fo%2F1784738978176.png?auth_key=1787335140-0-0-1cb623b33a9cce312cd33f456d1aa175\",\"height\":1280}],\"resource_fields\":[\"image\",\"watermark_image\",\"thumbnail\"]},{\"image\":[{\"width\":960,\"id\":\"117fa25d08944726af589653f1c31ef8\",\"url\":\"https://workspace-zb-cdn.qianwen.com/81d0ff99ae6a43768dbc618a168f2e82%2Fo%2F1784738978208.png?auth_key=1787333580-0-0-f78cc06e71568feb64bd43363e45b273\",\"height\":1280}],\"thumbnail\":[{\"width\":800,\"id\":\"efd0f0a3397746a7a357f37149b02e12\",\"url\":\"https://workspace-zb-cdn.qianwen.com/40ead92efbdd4cd682095b4f87511d87%2Fo%2F1784738978161.webp.jpg?auth_key=1787333700-0-0-6ff12667699414af342680e6ea63bbe8\",\"height\":1067}],\"ref_image_ids\":[],\"agent_material_id\":\"ab9a80a6225b4f8193496c7888fe89d1\",\"type\":\"generate_image\",\"watermark_image\":[{\"width\":960,\"id\":\"6666fe3cc4654407b65d163084104d74\",\"url\":\"https://workspace-zb-cdn.qianwen.com/24c45ffcb43746fa85ce5e1e69453cb1%2Fo%2F1784738978194.png?auth_key=1787331900-0-0-42189ceef47df3aff88bdd8453414a1c\",\"height\":1280}],\"resource_fields\":[\"image\",\"watermark_image\",\"thumbnail\"]},{\"image\":[{\"width\":960,\"id\":\"23394faeb1df4220a4ebb03ccbd51d71\",\"url\":\"https://workspace-zb-cdn.qianwen.com/9176c2a936f8409db890c22d35d8e316%2Fo%2F1784738978232.png?auth_key=1787332740-0-0-9c3c0911ccfa57b41ffc81e50f86a499\",\"height\":1280}],\"thumbnail\":[{\"width\":800,\"id\":\"3f0db47d07994536ae3b1c6cfaa83325\",\"url\":\"https://workspace-zb-cdn.qianwen.com/7518e51e1c0046a5b0cca4c1d91336e0%2Fo%2F1784738978152.webp.jpg?auth_key=1787332080-0-0-23475cbe717e47bc588e59eb71f1f0d7\",\"height\":1067}],\"ref_image_ids\":[],\"agent_material_id\":\"4e4879b59ac741338886a2dace374a4d\",\"type\":\"generate_image\",\"watermark_image\":[{\"width\":960,\"id\":\"9313b46363b34d12b0f55cb5e1e0cf36\",\"url\":\"https://workspace-zb-cdn.qianwen.com/364a465a4c05407984a978f2b276c528%2Fo%2F1784738978222.png?auth_key=1787333940-0-0-7cb39322002fd64913ffa93f1e043f92\",\"height\":1280}],\"resource_fields\":[\"image\",\"watermark_image\",\"thumbnail\"]}],\"prompt\":\"20岁的白发美女\",\"status\":\"complete\",\"ratio\":\"3:4\",\"estimated_time\":1784738977639},\"source_seq\":\"ai_generate_image_list_1\"},\"template_id\":\"card_images\"},\"debug\":{\"deleteCache\":0,\"debug\":0,\"jsdebug\":1},\"log\":{\"sc\":{\"sc\":\"card_images\"},\"comm\":{}},\"format\":\"html\",\"reqId\":\"38020965df8f4273b6421b4710264ec8\",\"scene\":\"card\",\"option\":{\"request\":{\"pathName\":\"/api/v1/share/info\",\"protocol\":\"HTTP/1.1\",\"host\":\"chat2-api.qianwen.com\",\"header\":{\"content-length\":\"66\",\"x5-uuid\":\"51ce701f4615d84c44bc7a37fddce52b\",\"origin\":\"https://www.qianwen.com\",\"x-forwarded-host\":\"chat2-api.qianwen.com\",\"x-remote-ip\":\"183.238.127.82\",\"x-client-scheme\":\"https\",\"host\":\"chat2-api.qianwen.com\",\"x-real-port\":\"53231\",\"ns-client-ip\":\"183.238.127.82\",\"content-type\":\"application/json\",\"x-chat-biz\":\"{\\\"chatId\\\":\\\"38020965df8f4273b6421b4710264ec8\\\",\\\"agentId\\\":\\\"\\\",\\\"enableWebp\\\":\\\"\\\",\\\"runtimeEnabled\\\":false,\\\"debugEnabled\\\":false,\\\"htmlRenderV2Allow\\\":false,\\\"htmlRenderV3Allow\\\":false,\\\"ssrCardV1\\\":false,\\\"csrCardV1\\\":false}\",\"web-server-type\":\"tengine-ingress\",\"proxy-x-forwarded-for\":\"183.238.127.82\",\"x-real-scheme\":\"https\",\"x-forwarded-proto\":\"https\",\"x-wua-code\":\"FF_WUA_EMPTY\",\"wl-proxy-client-ip\":\"183.238.127.82\",\"x5-ext-info\":\"{\\\"bx-flowtype\\\":\\\"PCWeb\\\",\\\"p-flowtype\\\":\\\"ajax\\\"}\",\"x5-ext-trans\":\"{\\\"bx-flowtype\\\":\\\"PCWeb\\\",\\\"p-flowtype\\\":\\\"ajax\\\"}\",\"x-wua-result\":\"{\\\"s\\\":\\\"FF_WUA_EMPTY\\\",\\\"b\\\":\\\"\\\",\\\"v\\\":\\\"\\\",\\\"g\\\":0,\\\"e\\\":\\\"\\\",\\\"d\\\":\\\"\\\",\\\"h\\\":\\\"\\\"}\",\"x-forwarded-for\":\"183.238.127.82\",\"x-chat-id\":\"38020965df8f4273b6421b4710264ec8\",\"eagleeye-traceid\":\"2150422a17847391532206840e0ac7\",\"x-real-ip\":\"183.238.127.82\",\"x-accesslayer-ip\":\"33.80.66.42\",\"x-sinfo\":\"on\",\"x-request-from\":\"aserver\",\"x-scheme\":\"https\",\"eagleeye-rpcid\":\"0.1\",\"user-agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36\"},\"queryParam\":{}},\"extra\":{\"hid\":\"38020965df8f4273b6421b4710264ec8\",\"renderType\":\"sc\",\"device\":\"mobile\",\"envType\":\"prod\",\"_renderServerEnvType\":\"prod\"},\"renderConfig\":{\"quarkUi\":false,\"reactDom\":false,\"react\":false,\"isBizCssInline\":true}}},\"RequestedIP\":\"33.60.236.96\",\"env\":\"prod\"});\n         </script>"
+                                                }
+                                            ],
+                                            "version": "0.0.7",
+                                            "@attributes": {
+                                                "sc": "card_images"
+                                            },
+                                            "lgno": 1
+                                        },
+                                        "type": "ai_generate_image_list",
+                                        "html_meta": {
+                                            "cost": 62,
+                                            "status": 0
+                                        },
+                                        "content": {
+                                            "resource_infos": [
+                                                {
+                                                    "refer_id": "ref1",
+                                                    "width": 960,
+                                                    "id": "7351459e1c0249a3bd71bfe9bb747172",
+                                                    "url": "https://workspace-zb-cdn.qianwen.com/5bb2f69edd2c4fa8b8feabbaecbe0398%2Fo%2F1784738978204.png?auth_key=1787333880-0-0-e51f61ffbf38f5b96f681adde32dc17e",
+                                                    "height": 1280,
+                                                    "md5": "zhGOgBbOjr1nmzspi6CkBA=="
+                                                },
+                                                {
+                                                    "refer_id": "ref2",
+                                                    "width": 960,
+                                                    "id": "4a32525e991149038f3be1c651f6d0af",
+                                                    "url": "https://workspace-zb-cdn.qianwen.com/2b111c6a26ea468ab270f9f4966e6020%2Fo%2F1784738978268.png?auth_key=1787334360-0-0-79dc5a5dd083ae7696fca83903a625e1",
+                                                    "height": 1280,
+                                                    "md5": "eS8fbXik+kEpLNqkpUggDQ=="
+                                                },
+                                                {
+                                                    "refer_id": "ref3",
+                                                    "width": 800,
+                                                    "id": "6bdef41953984c8a9dd2d86ee4a835cc",
+                                                    "url": "https://workspace-zb-cdn.qianwen.com/d9d54876d5bd49efb5b24d63a6f21b3c%2Fo%2F1784738978159.webp.jpg?auth_key=1787334960-0-0-ffbd4154f1d2a32fd8e02cdcfc2372fa",
+                                                    "height": 1067,
+                                                    "md5": "1BOyQOqt+Z1aYuw+abC+RA=="
+                                                },
+                                                {
+                                                    "refer_id": "ref4",
+                                                    "width": 960,
+                                                    "id": "446c8edd771d4db1ab8fe2c6d146b343",
+                                                    "url": "https://workspace-zb-cdn.qianwen.com/7efad9ab9027497d84ac02344f229f86%2Fo%2F1784738978220.png?auth_key=1787334120-0-0-540ffd8ecd1ee952a59498818d85a836",
+                                                    "height": 1280,
+                                                    "md5": "QwQqQjWKWJVZTSLNegMBOQ=="
+                                                },
+                                                {
+                                                    "refer_id": "ref5",
+                                                    "width": 960,
+                                                    "id": "e010e57d72104adfbceb5c7f79a17386",
+                                                    "url": "https://workspace-zb-cdn.qianwen.com/ca56d6e864834bd4a66a62453ad4d3da%2Fo%2F1784738978176.png?auth_key=1787335140-0-0-1cb623b33a9cce312cd33f456d1aa175",
+                                                    "height": 1280,
+                                                    "md5": "ZHarDfwHMdTWlIqKWgRduQ=="
+                                                },
+                                                {
+                                                    "refer_id": "ref6",
+                                                    "width": 800,
+                                                    "id": "986c290c915a4dd99bf2c08406f61179",
+                                                    "url": "https://workspace-zb-cdn.qianwen.com/afe3b6b928524f82b722e9967e4cba5b%2Fo%2F1784738978158.webp.jpg?auth_key=1787334300-0-0-b7b8a2ddc33de17b837d50725eaafad9",
+                                                    "height": 1067,
+                                                    "md5": "plomlEI/bUg9VChsiRvfPw=="
+                                                },
+                                                {
+                                                    "refer_id": "ref7",
+                                                    "width": 960,
+                                                    "id": "117fa25d08944726af589653f1c31ef8",
+                                                    "url": "https://workspace-zb-cdn.qianwen.com/81d0ff99ae6a43768dbc618a168f2e82%2Fo%2F1784738978208.png?auth_key=1787333580-0-0-f78cc06e71568feb64bd43363e45b273",
+                                                    "height": 1280,
+                                                    "md5": "XHCtsgZIXL66LIpT4ABobw=="
+                                                },
+                                                {
+                                                    "refer_id": "ref8",
+                                                    "width": 960,
+                                                    "id": "6666fe3cc4654407b65d163084104d74",
+                                                    "url": "https://workspace-zb-cdn.qianwen.com/24c45ffcb43746fa85ce5e1e69453cb1%2Fo%2F1784738978194.png?auth_key=1787331900-0-0-42189ceef47df3aff88bdd8453414a1c",
+                                                    "height": 1280,
+                                                    "md5": "ExOJWODLf+ZiidlBm+KMkA=="
+                                                },
+                                                {
+                                                    "refer_id": "ref9",
+                                                    "width": 800,
+                                                    "id": "efd0f0a3397746a7a357f37149b02e12",
+                                                    "url": "https://workspace-zb-cdn.qianwen.com/40ead92efbdd4cd682095b4f87511d87%2Fo%2F1784738978161.webp.jpg?auth_key=1787333700-0-0-6ff12667699414af342680e6ea63bbe8",
+                                                    "height": 1067,
+                                                    "md5": "e8khBG8e5Pf7IsWDgLpy7Q=="
+                                                },
+                                                {
+                                                    "refer_id": "ref10",
+                                                    "width": 960,
+                                                    "id": "23394faeb1df4220a4ebb03ccbd51d71",
+                                                    "url": "https://workspace-zb-cdn.qianwen.com/9176c2a936f8409db890c22d35d8e316%2Fo%2F1784738978232.png?auth_key=1787332740-0-0-9c3c0911ccfa57b41ffc81e50f86a499",
+                                                    "height": 1280,
+                                                    "md5": "jOtZzdtvdxLbJUuoj3klsg=="
+                                                },
+                                                {
+                                                    "refer_id": "ref11",
+                                                    "width": 960,
+                                                    "id": "9313b46363b34d12b0f55cb5e1e0cf36",
+                                                    "url": "https://workspace-zb-cdn.qianwen.com/364a465a4c05407984a978f2b276c528%2Fo%2F1784738978222.png?auth_key=1787333940-0-0-7cb39322002fd64913ffa93f1e043f92",
+                                                    "height": 1280,
+                                                    "md5": "E+lbZ96uHNpf3njL50x9zQ=="
+                                                },
+                                                {
+                                                    "refer_id": "ref12",
+                                                    "width": 800,
+                                                    "id": "3f0db47d07994536ae3b1c6cfaa83325",
+                                                    "url": "https://workspace-zb-cdn.qianwen.com/7518e51e1c0046a5b0cca4c1d91336e0%2Fo%2F1784738978152.webp.jpg?auth_key=1787332080-0-0-23475cbe717e47bc588e59eb71f1f0d7",
+                                                    "height": 1067,
+                                                    "md5": "dcxNf7XTm8ngPwor36/2XQ=="
+                                                }
+                                            ],
+                                            "complete_description": "根据你刚才的提问“__20岁的白发美女__”，视频已经生成好啦！",
+                                            "generate_model_name": "",
+                                            "task_id": "4eb9224f8830480e9ec59853c1be0412",
+                                            "scene": "qwen2_t2i",
+                                            "image_num": 4,
+                                            "start_time": 1784738967086,
+                                            "layout_list": [
+                                                {
+                                                    "image": [
+                                                        "ref1"
+                                                    ],
+                                                    "thumbnail": [
+                                                        "ref3"
+                                                    ],
+                                                    "ref_image_ids": [],
+                                                    "agent_material_id": "e744408ff6be4442bf6c7d077b7a1124",
+                                                    "type": "generate_image",
+                                                    "watermark_image": [
+                                                        "ref2"
+                                                    ],
+                                                    "resource_fields": [
+                                                        "image",
+                                                        "watermark_image",
+                                                        "thumbnail"
+                                                    ]
+                                                },
+                                                {
+                                                    "image": [
+                                                        "ref4"
+                                                    ],
+                                                    "thumbnail": [
+                                                        "ref6"
+                                                    ],
+                                                    "ref_image_ids": [],
+                                                    "agent_material_id": "04501c72f5d74194b83171567190da53",
+                                                    "type": "generate_image",
+                                                    "watermark_image": [
+                                                        "ref5"
+                                                    ],
+                                                    "resource_fields": [
+                                                        "image",
+                                                        "watermark_image",
+                                                        "thumbnail"
+                                                    ]
+                                                },
+                                                {
+                                                    "image": [
+                                                        "ref7"
+                                                    ],
+                                                    "thumbnail": [
+                                                        "ref9"
+                                                    ],
+                                                    "ref_image_ids": [],
+                                                    "agent_material_id": "ab9a80a6225b4f8193496c7888fe89d1",
+                                                    "type": "generate_image",
+                                                    "watermark_image": [
+                                                        "ref8"
+                                                    ],
+                                                    "resource_fields": [
+                                                        "image",
+                                                        "watermark_image",
+                                                        "thumbnail"
+                                                    ]
+                                                },
+                                                {
+                                                    "image": [
+                                                        "ref10"
+                                                    ],
+                                                    "thumbnail": [
+                                                        "ref12"
+                                                    ],
+                                                    "ref_image_ids": [],
+                                                    "agent_material_id": "4e4879b59ac741338886a2dace374a4d",
+                                                    "type": "generate_image",
+                                                    "watermark_image": [
+                                                        "ref11"
+                                                    ],
+                                                    "resource_fields": [
+                                                        "image",
+                                                        "watermark_image",
+                                                        "thumbnail"
+                                                    ]
+                                                }
+                                            ],
+                                            "extra_info": {
+                                                "disable_publish": 0,
+                                                "offset": 1784738967086,
+                                                "type": "TEXT_TO_IMG",
+                                                "category": "image_generation",
+                                                "content": {
+                                                    "gmt_create": 1784738967086,
+                                                    "disable_publish": 0,
+                                                    "record_id": "4eb9224f8830480e9ec59853c1be0412",
+                                                    "user_tags": [
+                                                        "normal"
+                                                    ],
+                                                    "estimated_completion_time": "2026-07-23T00:49:37.639+0800",
+                                                    "num": 4,
+                                                    "extra": {
+                                                        "is_cameo": false,
+                                                        "can_reedit": true,
+                                                        "query": "20岁的白发美女",
+                                                        "root_model": "qwen2",
+                                                        "params": {
+                                                            "attachments": [],
+                                                            "size": "3:4",
+                                                            "source_cameo_profiles": []
+                                                        },
+                                                        "seen": true,
+                                                        "scene": "qwen2_t2i",
+                                                        "bgm_audios": [],
+                                                        "req_id": "38020965df8f4273b6421b4710264ec8",
+                                                        "model_name": "Qwen-Image 2.0",
+                                                        "origin_query": "生成 20岁的 白发美女",
+                                                        "result_images": [
+                                                            {
+                                                                "thumbnail_url": "https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976420-04bd263128fd4651a70033db301d3c9d.png?auth_key=1786034977-0-0-d685e2f31a7e78cac4b349e25e8beb4c&x-oss-process=image%2Fformat%2Cwebp%2Fresize%2Cs_800",
+                                                                "i2iIntent": "无",
+                                                                "url": "http://ai-studio-resource.cn-zhangjiakou.oss.aliyuncs.com/d/qwen/3531b5eb082a1b5c6865d1f619e9246e/1784738976420-04bd263128fd4651a70033db301d3c9d.png?Expires=1786034977&OSSAccessKeyId=LTAI5tB1ULAmj55yDBf6XJ9T&Signature=XBavQBs9cqTFRZA55bEhh5zt55A%3D",
+                                                                "is_multi_intent": false,
+                                                                "ref_image_ids": [],
+                                                                "cdn_url": "https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976420-04bd263128fd4651a70033db301d3c9d.png?auth_key=1786034977-0-0-d685e2f31a7e78cac4b349e25e8beb4c",
+                                                                "preview_url": "https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976420-04bd263128fd4651a70033db301d3c9d.png?auth_key=1786034977-0-0-d685e2f31a7e78cac4b349e25e8beb4c&x-oss-process=image%2Fformat%2Cwebp",
+                                                                "width": 960,
+                                                                "download_url": "https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976681-1e8f055a39484cd1a8c08e24f4b4d09b.png?auth_key=1786034977-0-0-b8e8a1f5868127c726bf72663411b152",
+                                                                "material_id": "e744408ff6be4442bf6c7d077b7a1124",
+                                                                "prompt": "20岁的白发美女",
+                                                                "height": 1280,
+                                                                "ratio": "3:4",
+                                                                "is_nowater_mark_intent": false
+                                                            },
+                                                            {
+                                                                "thumbnail_url": "https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976418-ea876d028118457a9e2798cb6061f591.png?auth_key=1786034977-0-0-ab75f73b73265b9b1f9b8bf9b7088de1&x-oss-process=image%2Fformat%2Cwebp%2Fresize%2Cs_800",
+                                                                "i2iIntent": "无",
+                                                                "url": "http://ai-studio-resource.cn-zhangjiakou.oss.aliyuncs.com/d/qwen/3531b5eb082a1b5c6865d1f619e9246e/1784738976418-ea876d028118457a9e2798cb6061f591.png?Expires=1786034977&OSSAccessKeyId=LTAI5tB1ULAmj55yDBf6XJ9T&Signature=R8bGT579QBmeXGOq2Yk52pcAMy4%3D",
+                                                                "is_multi_intent": false,
+                                                                "ref_image_ids": [],
+                                                                "cdn_url": "https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976418-ea876d028118457a9e2798cb6061f591.png?auth_key=1786034977-0-0-ab75f73b73265b9b1f9b8bf9b7088de1",
+                                                                "preview_url": "https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976418-ea876d028118457a9e2798cb6061f591.png?auth_key=1786034977-0-0-ab75f73b73265b9b1f9b8bf9b7088de1&x-oss-process=image%2Fformat%2Cwebp",
+                                                                "width": 960,
+                                                                "download_url": "https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976686-4f6063dbaf9f4f78ab9ad2c604b65d86.png?auth_key=1786034977-0-0-56c602c7708fc4d48d695e678433c469",
+                                                                "material_id": "04501c72f5d74194b83171567190da53",
+                                                                "prompt": "20岁的白发美女",
+                                                                "height": 1280,
+                                                                "ratio": "3:4",
+                                                                "is_nowater_mark_intent": false
+                                                            },
+                                                            {
+                                                                "thumbnail_url": "https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976423-52868b42a3854645aa23c4070c612f8f.png?auth_key=1786034977-0-0-bd0004374af2e4e6c9d2780784889b6f&x-oss-process=image%2Fformat%2Cwebp%2Fresize%2Cs_800",
+                                                                "i2iIntent": "无",
+                                                                "url": "http://ai-studio-resource.cn-zhangjiakou.oss.aliyuncs.com/d/qwen/3531b5eb082a1b5c6865d1f619e9246e/1784738976423-52868b42a3854645aa23c4070c612f8f.png?Expires=1786034977&OSSAccessKeyId=LTAI5tB1ULAmj55yDBf6XJ9T&Signature=MECWhsuVloreFFfXvPoFKjbbYHo%3D",
+                                                                "is_multi_intent": false,
+                                                                "ref_image_ids": [],
+                                                                "cdn_url": "https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976423-52868b42a3854645aa23c4070c612f8f.png?auth_key=1786034977-0-0-bd0004374af2e4e6c9d2780784889b6f",
+                                                                "preview_url": "https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976423-52868b42a3854645aa23c4070c612f8f.png?auth_key=1786034977-0-0-bd0004374af2e4e6c9d2780784889b6f&x-oss-process=image%2Fformat%2Cwebp",
+                                                                "width": 960,
+                                                                "download_url": "https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976685-0509fd1d2be04f5a90da0bde43c5b110.png?auth_key=1786034977-0-0-716d560924451a674b17a035c16c042f",
+                                                                "material_id": "ab9a80a6225b4f8193496c7888fe89d1",
+                                                                "prompt": "20岁的白发美女",
+                                                                "height": 1280,
+                                                                "ratio": "3:4",
+                                                                "is_nowater_mark_intent": false
+                                                            },
+                                                            {
+                                                                "thumbnail_url": "https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976417-ce58bec0dfc34f37bc328bda81ede9c3.png?auth_key=1786034977-0-0-f70f45028bf18af275a11ce88c866c3f&x-oss-process=image%2Fformat%2Cwebp%2Fresize%2Cs_800",
+                                                                "i2iIntent": "无",
+                                                                "url": "http://ai-studio-resource.cn-zhangjiakou.oss.aliyuncs.com/d/qwen/3531b5eb082a1b5c6865d1f619e9246e/1784738976417-ce58bec0dfc34f37bc328bda81ede9c3.png?Expires=1786034977&OSSAccessKeyId=LTAI5tB1ULAmj55yDBf6XJ9T&Signature=q0zIQyLNyXbhFzECOdmcwA7bFwA%3D",
+                                                                "is_multi_intent": false,
+                                                                "ref_image_ids": [],
+                                                                "cdn_url": "https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976417-ce58bec0dfc34f37bc328bda81ede9c3.png?auth_key=1786034977-0-0-f70f45028bf18af275a11ce88c866c3f",
+                                                                "preview_url": "https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976417-ce58bec0dfc34f37bc328bda81ede9c3.png?auth_key=1786034977-0-0-f70f45028bf18af275a11ce88c866c3f&x-oss-process=image%2Fformat%2Cwebp",
+                                                                "width": 960,
+                                                                "download_url": "https://quark-aistudio-cdn.quark.cn/d%2Fqwen%2F3531b5eb082a1b5c6865d1f619e9246e%2F1784738976721-be517b15cd06490fa264c95a82827188.png?auth_key=1786034977-0-0-6db24448583da4ca58bc4694685cd541",
+                                                                "material_id": "4e4879b59ac741338886a2dace374a4d",
+                                                                "prompt": "20岁的白发美女",
+                                                                "height": 1280,
+                                                                "ratio": "3:4",
+                                                                "is_nowater_mark_intent": false
+                                                            }
+                                                        ],
+                                                        "model": "qwen2"
+                                                    },
+                                                    "task_id": "bce2a48bcc394084bc4b87bb950a0b6b",
+                                                    "title": "20岁的白发美女",
+                                                    "gmt_modified": 1784738977639,
+                                                    "seen": true,
+                                                    "status": 1
+                                                }
+                                            },
+                                            "retry_description": "请再帮我生成一次",
+                                            "display_list": [
+                                                {
+                                                    "image": [
+                                                        {
+                                                            "width": 960,
+                                                            "id": "7351459e1c0249a3bd71bfe9bb747172",
+                                                            "url": "https://workspace-zb-cdn.qianwen.com/5bb2f69edd2c4fa8b8feabbaecbe0398%2Fo%2F1784738978204.png?auth_key=1787333880-0-0-e51f61ffbf38f5b96f681adde32dc17e",
+                                                            "height": 1280
+                                                        }
+                                                    ],
+                                                    "thumbnail": [
+                                                        {
+                                                            "width": 800,
+                                                            "id": "6bdef41953984c8a9dd2d86ee4a835cc",
+                                                            "url": "https://workspace-zb-cdn.qianwen.com/d9d54876d5bd49efb5b24d63a6f21b3c%2Fo%2F1784738978159.webp.jpg?auth_key=1787334960-0-0-ffbd4154f1d2a32fd8e02cdcfc2372fa",
+                                                            "height": 1067
+                                                        }
+                                                    ],
+                                                    "ref_image_ids": [],
+                                                    "agent_material_id": "e744408ff6be4442bf6c7d077b7a1124",
+                                                    "type": "generate_image",
+                                                    "watermark_image": [
+                                                        {
+                                                            "width": 960,
+                                                            "id": "4a32525e991149038f3be1c651f6d0af",
+                                                            "url": "https://workspace-zb-cdn.qianwen.com/2b111c6a26ea468ab270f9f4966e6020%2Fo%2F1784738978268.png?auth_key=1787334360-0-0-79dc5a5dd083ae7696fca83903a625e1",
+                                                            "height": 1280
+                                                        }
+                                                    ],
+                                                    "resource_fields": [
+                                                        "image",
+                                                        "watermark_image",
+                                                        "thumbnail"
+                                                    ]
+                                                },
+                                                {
+                                                    "image": [
+                                                        {
+                                                            "width": 960,
+                                                            "id": "446c8edd771d4db1ab8fe2c6d146b343",
+                                                            "url": "https://workspace-zb-cdn.qianwen.com/7efad9ab9027497d84ac02344f229f86%2Fo%2F1784738978220.png?auth_key=1787334120-0-0-540ffd8ecd1ee952a59498818d85a836",
+                                                            "height": 1280
+                                                        }
+                                                    ],
+                                                    "thumbnail": [
+                                                        {
+                                                            "width": 800,
+                                                            "id": "986c290c915a4dd99bf2c08406f61179",
+                                                            "url": "https://workspace-zb-cdn.qianwen.com/afe3b6b928524f82b722e9967e4cba5b%2Fo%2F1784738978158.webp.jpg?auth_key=1787334300-0-0-b7b8a2ddc33de17b837d50725eaafad9",
+                                                            "height": 1067
+                                                        }
+                                                    ],
+                                                    "ref_image_ids": [],
+                                                    "agent_material_id": "04501c72f5d74194b83171567190da53",
+                                                    "type": "generate_image",
+                                                    "watermark_image": [
+                                                        {
+                                                            "width": 960,
+                                                            "id": "e010e57d72104adfbceb5c7f79a17386",
+                                                            "url": "https://workspace-zb-cdn.qianwen.com/ca56d6e864834bd4a66a62453ad4d3da%2Fo%2F1784738978176.png?auth_key=1787335140-0-0-1cb623b33a9cce312cd33f456d1aa175",
+                                                            "height": 1280
+                                                        }
+                                                    ],
+                                                    "resource_fields": [
+                                                        "image",
+                                                        "watermark_image",
+                                                        "thumbnail"
+                                                    ]
+                                                },
+                                                {
+                                                    "image": [
+                                                        {
+                                                            "width": 960,
+                                                            "id": "117fa25d08944726af589653f1c31ef8",
+                                                            "url": "https://workspace-zb-cdn.qianwen.com/81d0ff99ae6a43768dbc618a168f2e82%2Fo%2F1784738978208.png?auth_key=1787333580-0-0-f78cc06e71568feb64bd43363e45b273",
+                                                            "height": 1280
+                                                        }
+                                                    ],
+                                                    "thumbnail": [
+                                                        {
+                                                            "width": 800,
+                                                            "id": "efd0f0a3397746a7a357f37149b02e12",
+                                                            "url": "https://workspace-zb-cdn.qianwen.com/40ead92efbdd4cd682095b4f87511d87%2Fo%2F1784738978161.webp.jpg?auth_key=1787333700-0-0-6ff12667699414af342680e6ea63bbe8",
+                                                            "height": 1067
+                                                        }
+                                                    ],
+                                                    "ref_image_ids": [],
+                                                    "agent_material_id": "ab9a80a6225b4f8193496c7888fe89d1",
+                                                    "type": "generate_image",
+                                                    "watermark_image": [
+                                                        {
+                                                            "width": 960,
+                                                            "id": "6666fe3cc4654407b65d163084104d74",
+                                                            "url": "https://workspace-zb-cdn.qianwen.com/24c45ffcb43746fa85ce5e1e69453cb1%2Fo%2F1784738978194.png?auth_key=1787331900-0-0-42189ceef47df3aff88bdd8453414a1c",
+                                                            "height": 1280
+                                                        }
+                                                    ],
+                                                    "resource_fields": [
+                                                        "image",
+                                                        "watermark_image",
+                                                        "thumbnail"
+                                                    ]
+                                                },
+                                                {
+                                                    "image": [
+                                                        {
+                                                            "width": 960,
+                                                            "id": "23394faeb1df4220a4ebb03ccbd51d71",
+                                                            "url": "https://workspace-zb-cdn.qianwen.com/9176c2a936f8409db890c22d35d8e316%2Fo%2F1784738978232.png?auth_key=1787332740-0-0-9c3c0911ccfa57b41ffc81e50f86a499",
+                                                            "height": 1280
+                                                        }
+                                                    ],
+                                                    "thumbnail": [
+                                                        {
+                                                            "width": 800,
+                                                            "id": "3f0db47d07994536ae3b1c6cfaa83325",
+                                                            "url": "https://workspace-zb-cdn.qianwen.com/7518e51e1c0046a5b0cca4c1d91336e0%2Fo%2F1784738978152.webp.jpg?auth_key=1787332080-0-0-23475cbe717e47bc588e59eb71f1f0d7",
+                                                            "height": 1067
+                                                        }
+                                                    ],
+                                                    "ref_image_ids": [],
+                                                    "agent_material_id": "4e4879b59ac741338886a2dace374a4d",
+                                                    "type": "generate_image",
+                                                    "watermark_image": [
+                                                        {
+                                                            "width": 960,
+                                                            "id": "9313b46363b34d12b0f55cb5e1e0cf36",
+                                                            "url": "https://workspace-zb-cdn.qianwen.com/364a465a4c05407984a978f2b276c528%2Fo%2F1784738978222.png?auth_key=1787333940-0-0-7cb39322002fd64913ffa93f1e043f92",
+                                                            "height": 1280
+                                                        }
+                                                    ],
+                                                    "resource_fields": [
+                                                        "image",
+                                                        "watermark_image",
+                                                        "thumbnail"
+                                                    ]
+                                                }
+                                            ],
+                                            "prompt": "20岁的白发美女",
+                                            "status": "complete",
+                                            "ratio": "3:4",
+                                            "estimated_time": 1784738977639
+                                        },
+                                        "source_seq": "ai_generate_image_list_1"
+                                    }
+                                ],
+                                "ext_info": {
+                                    "zaodian_extra": {
+                                        "record_id": "4eb9224f8830480e9ec59853c1be0412",
+                                        "task_info_ids": [
+                                            "239f60160dd84233b51533e99da5c1f3"
+                                        ]
+                                    },
+                                    "model_extra": {
+                                        "can_remake": false,
+                                        "is_repeat": false,
+                                        "video_seed": 1121098267,
+                                        "is_new_generate": true,
+                                        "topic_id": "8d509eb1-58ae-4b6f-89ba-21e404a8e2ee",
+                                        "strategy": "",
+                                        "is_multi_edit_intent": false
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "content": "",
+                            "mime_type": "paa/iframe",
+                            "status": "complete",
+                            "meta_data": {
+                                "paas": [
+                                    {
+                                        "schema": "",
+                                        "show_text": "一键生成车内氛围感写真",
+                                        "item_id": "c0a90c03-8a2d-4575-90b6-88d1a415ad37",
+                                        "paa_pass_through": "{\"is_paa\": true}",
+                                        "ai_tool_scene": "",
+                                        "query_type": "",
+                                        "source": "",
+                                        "click_action": "ONLY_TEXT",
+                                        "show_type": "TEXT",
+                                        "paa_query": "一键生成车内氛围感写真",
+                                        "send_text": "",
+                                        "show_img": "",
+                                        "attachment": []
+                                    },
+                                    {
+                                        "schema": "",
+                                        "show_text": "换成侧过身看向窗外的姿势",
+                                        "item_id": "14e9fd54-a5be-40bb-b91b-934a247fb8a8",
+                                        "paa_pass_through": "{\"is_paa\": true}",
+                                        "ai_tool_scene": "",
+                                        "query_type": "",
+                                        "source": "",
+                                        "click_action": "ONLY_TEXT",
+                                        "show_type": "TEXT",
+                                        "paa_query": "换成侧过身看向窗外的姿势",
+                                        "send_text": "",
+                                        "show_img": "",
+                                        "attachment": []
+                                    },
+                                    {
+                                        "schema": "",
+                                        "show_text": "帮我再生成几张",
+                                        "item_id": "0030b18d-c1ab-4306-9290-d996e3986e1e",
+                                        "paa_pass_through": "{\"is_paa\": true}",
+                                        "ai_tool_scene": "",
+                                        "query_type": "",
+                                        "source": "",
+                                        "click_action": "ONLY_TEXT",
+                                        "show_type": "TEXT",
+                                        "paa_query": "帮我再生成几张",
+                                        "send_text": "",
+                                        "show_img": "",
+                                        "attachment": []
+                                    }
+                                ],
+                                "image_result_paas": []
+                            }
+                        }
+                    ],
+                    "extra_info": {
+                        "intent_content": "",
+                        "model_extra": {
+                            "can_remake": false,
+                            "is_repeat": false,
+                            "video_seed": 1121098267,
+                            "is_new_generate": true,
+                            "topic_id": "8d509eb1-58ae-4b6f-89ba-21e404a8e2ee",
+                            "strategy": "",
+                            "is_multi_edit_intent": false
+                        },
+                        "intent_scene": "zaodian_image_generate_image",
+                        "passthrough_context": "{\"journeyc_trace_id\":\"ABF942769B86F4FBD700012367119221\",\"journeyc_span_id\":\"135A1F668D6A8070\",\"chat_intent_info\":\"{\\\"agent_info\\\":{\\\"agent\\\":\\\"AIZaoDianAgent\\\",\\\"judge_type\\\":\\\"normal_judge\\\",\\\"image_request\\\":\\\"0\\\",\\\"hit_vlm\\\":false,\\\"intent_request\\\":\\\"1\\\",\\\"scene\\\":\\\"zaodian_image_generate_image\\\",\\\"sub_scene\\\":\\\"\\\"},\\\"agentic_intent\\\":{\\\"content\\\":\\\"\\\"},\\\"banner_intent\\\":{\\\"need_trigger\\\":false},\\\"black_intent\\\":{\\\"black_list\\\":[]},\\\"confidence_intent\\\":{\\\"document\\\":false,\\\"topic\\\":false},\\\"ef_intent\\\":{\\\"content\\\":\\\"文本创作\\\",\\\"origin_content\\\":\\\"文本创作\\\",\\\"llm_error_msg\\\":\\\"request process success!\\\",\\\"llm_error_code\\\":0},\\\"explicit_intent\\\":{\\\"explicit_memory\\\":false},\\\"search_intent\\\":{\\\"content\\\":\\\"图像生成任务，无时效性。涉及外貌描述，可能触发安全策略。</think>\\\\nT3|D1|安全拦截\\\",\\\"is_search\\\":false,\\\"is_simple\\\":false,\\\"label\\\":\\\"T3|D1|安全拦截\\\"},\\\"gao_kao_intent\\\":{\\\"content\\\":\\\"其他\\\"},\\\"makeup_intent\\\":{\\\"is_full_intent\\\":false,\\\"result\\\":{}},\\\"skill_intent\\\":{\\\"content\\\":\\\"\\\",\\\"intent_classify_content\\\":\\\"\\\",\\\"item_list\\\":[],\\\"llm_error_code\\\":0,\\\"llm_error_msg\\\":\\\"\\\",\\\"model_name\\\":\\\"\\\",\\\"skill_list\\\":[],\\\"skill_retrieve_content\\\":\\\"\\\"},\\\"tp_intent\\\":{\\\"third_party_scene\\\":\\\"\\\",\\\"trigger_third_party\\\":false},\\\"follow_up_intent\\\":{\\\"content\\\":\\\"\\\"},\\\"forward_intent\\\":{\\\"blocked\\\":true,\\\"content\\\":\\\"\\\"},\\\"tusou_intent\\\":{\\\"img_category\\\":0,\\\"intent\\\":0,\\\"round_index\\\":-1,\\\"session_id\\\":0},\\\"difficulty_intent\\\":{\\\"content\\\":\\\"Query缺乏明确谓语和具体约束，意图模糊，属于无语境闲聊式求助，保底L2。</think>\\\\nL2\\\",\\\"label\\\":\\\"L2\\\"},\\\"ef_correct_intent\\\":{\\\"category\\\":\\\"\\\",\\\"content\\\":\\\"\\\",\\\"platform\\\":\\\"\\\"},\\\"comment_intent\\\":{\\\"content\\\":\\\"\\\"},\\\"intentResults\\\":{\\\"ef_intent\\\":\\\"文本创作\\\",\\\"vqa_image_name\\\":\\\"异常\\\",\\\"vqa_ext_intent\\\":\\\"异常\\\",\\\"agentic_intent\\\":\\\"\\\",\\\"writer_intent\\\":\\\"\\\",\\\"uvl_intent\\\":\\\"内容创作-图片创作\\\"},\\\"rag_intent\\\":{\\\"content\\\":\\\"\\\",\\\"need_rag\\\":false},\\\"task_intent\\\":{\\\"content\\\":\\\"\\\"},\\\"txt_intent\\\":{},\\\"uvl_intent\\\":{\\\"content\\\":\\\"内容创作-图片创作\\\",\\\"model_name\\\":\\\"quarkchat-unified-intent-308x\\\",\\\"llm_error_msg\\\":\\\"request process success!\\\",\\\"llm_error_code\\\":0},\\\"vl_intent\\\":{},\\\"vqa_ext_intent\\\":{\\\"image_cls\\\":\\\"-1\\\",\\\"image_name\\\":\\\"异常\\\",\\\"intent_cls\\\":\\\"-1\\\",\\\"intent_name\\\":\\\"异常\\\",\\\"intent_signal\\\":\\\"0\\\"},\\\"writer_intent\\\":{\\\"content\\\":\\\"\\\"}}\"}",
+                        "is_async_card": "1",
+                        "prod_id": "tongyi",
+                        "scene": "zaodian_image_generate_image"
+                    },
+                    "request_timestamp": 1784738959897,
+                    "response_timestamp": 1784738959897,
+                    "created_at": 1784738959897,
+                    "updated_at": 1784738979519,
+                    "create_time": "2026-07-22T16:49:19.897+00:00",
+                    "update_time": "2026-07-22T16:49:39.519+00:00",
+                    "error_code": 0,
+                    "error_msg": "",
+                    "pos": "1784738959897",
+                    "communication": {
+                        "sessionid": "3286165f26834a4da0688d97fbd5fe4f",
+                        "resid": "10000000",
+                        "reqid": "38020965df8f4273b6421b4710264ec8",
+                        "run_id": "",
+                        "agent_type": "",
+                        "disconnection_signal": "1",
+                        "is_async_card": "1"
+                    },
+                    "event": "complete",
+                    "refresh": 1,
+                    "topic_id": "X7UUs0YPL04GCLnvZZc2rjfBR4hI64kx",
+                    "model_name": "Qwen",
+                    "deep_search": "0",
+                    "message_extra": "{\"outputAnswerParam\":{\"outputChannel\":\"quark\"}}"
+                }
+            ],
+            "read_at": 1784738979924,
+            "unread_cnt": 0,
+            "pos": "1784738979528",
+            "type": 0,
+            "status": 1
+        },
+        "created_at": 1784738991211,
+        "pr": "qwen",
+        "fr": "pc"
+    },
+    "success": true,
+    "httpCode": 200
+}

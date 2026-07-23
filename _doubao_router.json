@@ -1,0 +1,594 @@
+{
+    "loaderData": {
+        "thread_layout": {
+            "aid": 497858,
+            "pc_version": "3.28.5",
+            "accountInfo": {
+                "data": {
+                    "description": "会话过期，请重新登录",
+                    "error_code": 13,
+                    "name": "account_info_error",
+                    "session_key": "",
+                    "user_id": 0
+                },
+                "message": "error"
+            },
+            "userSetting": {
+                "code": 0,
+                "msg": "",
+                "data": {
+                    "ab_config": {
+                        "ab_results": {
+                            "ai_doc_ssr_at_chat_page": "true",
+                            "ai_doc_ssr_config_reuse": "true",
+                            "ai_office_ssr_sheet": "true",
+                            "ai_playground": "",
+                            "ai_slides_ssr_at_chat_page": "true",
+                            "aispace_rename": "",
+                            "aispace_revert": "",
+                            "d2d_fusion": "",
+                            "deep_thinking_auto": "optional",
+                            "deep_thinking_btn_memo": "1",
+                            "disable_new_office_task_for_personal": "",
+                            "doc_fixed_toolbar": "",
+                            "doc_needs_guidance": "",
+                            "doc_new_home": "",
+                            "doc_new_tab_home": "",
+                            "doc_new_tag": "",
+                            "doclink_mention_editor_v2": "",
+                            "docx_canvas_ssr_skip_max_ttv": "",
+                            "docx_canvas_ssr_skip_mode": "",
+                            "doubao_lark_block_entry_feature": "",
+                            "doubao_lark_feature_sync": "",
+                            "doubao_lark_feature_sync_v2": "",
+                            "editor_support_mention": "",
+                            "enableCommerceCredit": "",
+                            "enable_chat_auto_open_ssr": "true",
+                            "enable_chat_next": "",
+                            "enable_deep_thinking_auto_mode": "",
+                            "enable_docx_canvas_preheat": "",
+                            "enable_mode_select_container": "1",
+                            "enable_model_select_actionbar": "",
+                            "enable_pc_popup": "",
+                            "enable_wcb_in_main_conversation": "",
+                            "enable_wcb_in_main_conversation_test_period": "",
+                            "feed_item_with_artifact": "",
+                            "first_screen_nexpulse_delay_ms": "",
+                            "generic_conversation_icon": "1",
+                            "guidance_generic_input_mode": "2",
+                            "guidance_input_skill_behaivior": "",
+                            "guidance_page_layout_mode": "1",
+                            "guidance_skill_active_input_mode": "2",
+                            "hide_wcb_in_new_conversation": "",
+                            "inline_doc_card": "",
+                            "input_aggregate": "3,5,9,17,generic,2,11,13,16,25,26,138,5000,5003",
+                            "input_hold_space_to_speech": "",
+                            "input_min_rows": "",
+                            "input_paste_url_behavior": "avoid",
+                            "input_speech_shortcut_key": "",
+                            "input_visible_refocus_os": "macOS,Windows",
+                            "is_chat_tts_sami": "",
+                            "is_web_dark_mode_access": "",
+                            "landing_to_main_coco": "",
+                            "lark_hybrid_header": "",
+                            "new_guest_guidance_type": "skill-bar-bottom",
+                            "new_launch_api": "",
+                            "pc_template_recommend_feed": "",
+                            "refresh_wcb_when_start_new_topic": "",
+                            "revision_direct_accept_revision_default": "",
+                            "revision_direct_accept_revision_switch": "",
+                            "revision_guidance": "",
+                            "revision_guidance_close": "",
+                            "revision_guidance_popover": "",
+                            "share_thread_music_chat_next": "",
+                            "show_deep_thinking_btn": "1",
+                            "show_upgrade": "",
+                            "sidebar_conversation_icon_update": "",
+                            "sidebar_loadmore_distance": "",
+                            "sidebar_loadmore_throttle_optimise": "",
+                            "sidebar_profile_style_add_corp": "",
+                            "support_task_center": "",
+                            "trim_landing_page_skill_names": "4",
+                            "trim_landing_page_skills": "1",
+                            "ttu_input_preload": "",
+                            "use_action_bar_request": "1"
+                        },
+                        "create_bots": false
+                    },
+                    "ogf_config": {
+                        "show_ogf_switch": false,
+                        "ogf_enable": false
+                    },
+                    "share_config": {
+                        "supported_content_types": [
+                            1,
+                            3,
+                            5,
+                            6,
+                            7,
+                            8,
+                            10,
+                            20,
+                            60,
+                            70,
+                            71,
+                            72,
+                            81,
+                            83,
+                            84,
+                            2001,
+                            2004,
+                            2010,
+                            2007,
+                            2006,
+                            2008,
+                            2021,
+                            2070,
+                            2024,
+                            2025,
+                            2018,
+                            80,
+                            2017,
+                            2016,
+                            2015,
+                            2009,
+                            2014,
+                            2071,
+                            2074,
+                            2011,
+                            2012,
+                            2030,
+                            2013,
+                            2080,
+                            2081,
+                            9999,
+                            10000,
+                            2022,
+                            100,
+                            10015,
+                            2533,
+                            10001,
+                            10040,
+                            2075,
+                            10103,
+                            10030,
+                            10023,
+                            10056,
+                            10002,
+                            10003,
+                            10004,
+                            10005,
+                            10006,
+                            10007,
+                            10008,
+                            10009,
+                            10010,
+                            10011,
+                            10012,
+                            10013,
+                            10014,
+                            10016,
+                            10018,
+                            10019,
+                            10020,
+                            10021,
+                            10022,
+                            10024,
+                            10025,
+                            10026,
+                            10027,
+                            10028,
+                            10050,
+                            10051,
+                            10052,
+                            10053,
+                            10054,
+                            10055,
+                            10057,
+                            10058,
+                            10059,
+                            10060,
+                            10100,
+                            10101,
+                            10102,
+                            2535,
+                            9999999,
+                            2523,
+                            2540
+                        ],
+                        "report_review_config": {
+                            "reasons": [
+                                {
+                                    "id": 71,
+                                    "name": "有害/不安全"
+                                },
+                                {
+                                    "id": 72,
+                                    "name": "色情低俗"
+                                },
+                                {
+                                    "id": 73,
+                                    "name": "谩骂攻击"
+                                },
+                                {
+                                    "id": 74,
+                                    "name": "违法犯罪"
+                                },
+                                {
+                                    "id": 75,
+                                    "name": "其他"
+                                }
+                            ]
+                        }
+                    },
+                    "ai_reader": {
+                        "max_char_count": 3000000,
+                        "proxy_domains": [
+                            "judiciary.senate.gov",
+                            "nips.cc",
+                            "dl.acm.org"
+                        ],
+                        "ult_max_char_count": 3000000,
+                        "enable_ult": false
+                    },
+                    "code_assistant_config": {
+                        "supported_code_file_types": [
+                            ".py",
+                            ".java",
+                            ".js",
+                            ".ts",
+                            ".c",
+                            ".cpp",
+                            ".h",
+                            ".hpp",
+                            ".cc",
+                            ".cxx",
+                            ".html",
+                            ".css",
+                            ".php",
+                            ".rb",
+                            ".pl",
+                            ".sh",
+                            ".bash",
+                            ".swift",
+                            ".kt",
+                            ".kts",
+                            ".ktm",
+                            ".go",
+                            ".dart",
+                            ".scala",
+                            ".cs",
+                            ".aspx",
+                            ".xaml",
+                            ".vue",
+                            ".mod",
+                            ".proto",
+                            ".tsx",
+                            ".jsx",
+                            ".rs",
+                            ".json",
+                            ".yaml",
+                            ".yml",
+                            ".xml",
+                            ".env",
+                            ".config",
+                            ".properties",
+                            ".ini",
+                            ".toml",
+                            ".plist",
+                            ".md",
+                            ".markdown",
+                            ".adoc",
+                            ".feature",
+                            ".sum",
+                            ".bat",
+                            ".cmd",
+                            ".ps1",
+                            ".vbs",
+                            ".lua",
+                            ".vmx",
+                            ".vbox",
+                            ".dockerfile",
+                            ".wxml",
+                            ".wxss",
+                            ".m",
+                            ".for",
+                            ".f90",
+                            ".f95",
+                            ".f",
+                            ".xhtml",
+                            ".rdf",
+                            ".tmpl",
+                            ".scss",
+                            ".thrift",
+                            ".rst",
+                            ".meta",
+                            ".gitignore",
+                            ".patch",
+                            ".sql"
+                        ],
+                        "supported_file_names": [
+                            "makefile",
+                            "gemfile",
+                            "build.gradle"
+                        ],
+                        "default_assistant_file_types": [
+                            ".py",
+                            ".java",
+                            ".js",
+                            ".ts",
+                            ".c",
+                            ".cpp",
+                            ".h",
+                            ".hpp",
+                            ".cc",
+                            ".cxx",
+                            ".html",
+                            ".css",
+                            ".php",
+                            ".rb",
+                            ".pl",
+                            ".sh",
+                            ".bash",
+                            ".swift",
+                            ".kt",
+                            ".kts",
+                            ".ktm",
+                            ".go",
+                            ".dart",
+                            ".scala",
+                            ".cs",
+                            ".aspx",
+                            ".xaml",
+                            ".vue",
+                            ".mod",
+                            ".proto",
+                            ".tsx",
+                            ".jsx",
+                            ".rs",
+                            ".json",
+                            ".yaml",
+                            ".yml",
+                            ".xml",
+                            ".env",
+                            ".config",
+                            ".properties",
+                            ".ini",
+                            ".toml",
+                            ".plist",
+                            ".md",
+                            ".markdown",
+                            ".adoc",
+                            ".feature",
+                            ".sum",
+                            ".bat",
+                            ".cmd",
+                            ".ps1",
+                            ".vbs",
+                            ".lua",
+                            ".vmx",
+                            ".vbox",
+                            ".dockerfile"
+                        ],
+                        "data_analysis_config": {
+                            "max_file_count": 10,
+                            "max_single_file_size": 104857600
+                        }
+                    },
+                    "feedback": {
+                        "image": [
+                            {
+                                "feedback_type": 2,
+                                "feedback_detail_type": 200,
+                                "feedback_display": "内容不准确"
+                            },
+                            {
+                                "feedback_type": 2,
+                                "feedback_detail_type": 201,
+                                "feedback_display": "风格偏离"
+                            },
+                            {
+                                "feedback_type": 2,
+                                "feedback_detail_type": 202,
+                                "feedback_display": "美感不足"
+                            },
+                            {
+                                "feedback_type": 2,
+                                "feedback_detail_type": 203,
+                                "feedback_display": "不符合常理"
+                            },
+                            {
+                                "feedback_type": 2,
+                                "feedback_detail_type": 204,
+                                "feedback_display": "其他"
+                            },
+                            {
+                                "feedback_type": 1,
+                                "feedback_detail_type": 251,
+                                "feedback_display": "内容准确"
+                            },
+                            {
+                                "feedback_type": 1,
+                                "feedback_detail_type": 252,
+                                "feedback_display": "易于理解"
+                            },
+                            {
+                                "feedback_type": 1,
+                                "feedback_detail_type": 253,
+                                "feedback_display": "内容完善"
+                            },
+                            {
+                                "feedback_type": 1,
+                                "feedback_detail_type": 254,
+                                "feedback_display": "其他"
+                            }
+                        ]
+                    },
+                    "language_list": [
+                        {
+                            "language_code": "zh",
+                            "language": "简体中文",
+                            "language_loc": "中文（简体）"
+                        },
+                        {
+                            "language_code": "zh-Hant",
+                            "language": "繁体中文",
+                            "language_loc": "中文（繁體）"
+                        },
+                        {
+                            "language_code": "en",
+                            "language": "英语",
+                            "language_loc": "English"
+                        }
+                    ],
+                    "is_login": false,
+                    "page_config": {
+                        "hit_otter": false
+                    },
+                    "supertask_config": {
+                        "enable": false,
+                        "route_flowpc": false
+                    },
+                    "action_bar_menu_config": {
+                        "menu_item_list": [
+                            {
+                                "menu_type": 0,
+                                "name": "快速",
+                                "sub_title_name": "适用于大部分情况",
+                                "new_menu_item_tag": false,
+                                "tag": "",
+                                "icon": {
+                                    "uri": "action_bar_icon/light/mode_fast.png",
+                                    "url": "https://p26-flow-imagex-sign.byteimg.com/ocean-cloud-tos/action_bar_icon/light/mode_fast.png~tplv-a9rns2rl98-image.png?lk3s=8e244e95&rcl=202607230050441BD8538FCD8CC7CBF29B&rrcfp=8e47c875&x-expires=1787331044&x-signature=epQbYst028DbJXGUku3H5dWeRxQ%3D"
+                                },
+                                "dark_mode_icon": {
+                                    "uri": "action_bar_icon/dark/mode_fast.png",
+                                    "url": "https://p3-flow-imagex-sign.byteimg.com/ocean-cloud-tos/action_bar_icon/dark/mode_fast.png~tplv-a9rns2rl98-image.png?lk3s=8e244e95&rcl=202607230050441BD8538FCD8CC7CBF29B&rrcfp=8e47c875&x-expires=1787331044&x-signature=z1Zq7KYYJlMcluaIJ9me5WGAem4%3D"
+                                },
+                                "active_icon": {
+                                    "uri": "action_bar_icon/light/mode_fast.png",
+                                    "url": "https://p26-flow-imagex-sign.byteimg.com/ocean-cloud-tos/action_bar_icon/light/mode_fast.png~tplv-a9rns2rl98-image.png?lk3s=8e244e95&rcl=202607230050441BD8538FCD8CC7CBF29B&rrcfp=8e47c875&x-expires=1787331044&x-signature=epQbYst028DbJXGUku3H5dWeRxQ%3D"
+                                },
+                                "active_dark_mode_icon": {
+                                    "uri": "action_bar_icon/dark/mode_fast.png",
+                                    "url": "https://p3-flow-imagex-sign.byteimg.com/ocean-cloud-tos/action_bar_icon/dark/mode_fast.png~tplv-a9rns2rl98-image.png?lk3s=8e244e95&rcl=202607230050441BD8538FCD8CC7CBF29B&rrcfp=8e47c875&x-expires=1787331044&x-signature=z1Zq7KYYJlMcluaIJ9me5WGAem4%3D"
+                                },
+                                "agent_mode": 2
+                            },
+                            {
+                                "menu_type": 3,
+                                "name": "专家",
+                                "sub_title_name": "研究级智能模型",
+                                "new_menu_item_tag": false,
+                                "tag": "",
+                                "icon": {
+                                    "uri": "action_bar_icon/light/mode_pro.png",
+                                    "url": "https://p11-flow-imagex-sign.byteimg.com/ocean-cloud-tos/action_bar_icon/light/mode_pro.png~tplv-a9rns2rl98-image.png?lk3s=8e244e95&rcl=202607230050441BD8538FCD8CC7CBF29B&rrcfp=8e47c875&x-expires=1787331044&x-signature=n5ORFZFuUHoHFTDQ5%2Fcn7shdmvM%3D"
+                                },
+                                "dark_mode_icon": {
+                                    "uri": "action_bar_icon/dark/mode_pro_v2.png",
+                                    "url": "https://p26-flow-imagex-sign.byteimg.com/ocean-cloud-tos/action_bar_icon/dark/mode_pro_v2.png~tplv-a9rns2rl98-image.png?lk3s=8e244e95&rcl=202607230050441BD8538FCD8CC7CBF29B&rrcfp=8e47c875&x-expires=1787331044&x-signature=OVLQ7BALa9ItMV%2FPLxV%2Bh3H9RbI%3D"
+                                },
+                                "active_icon": {
+                                    "uri": "action_bar_icon/light/active_mode_pro.png",
+                                    "url": "https://p11-flow-imagex-sign.byteimg.com/ocean-cloud-tos/action_bar_icon/light/active_mode_pro.png~tplv-a9rns2rl98-image.png?lk3s=8e244e95&rcl=202607230050441BD8538FCD8CC7CBF29B&rrcfp=8e47c875&x-expires=1787331044&x-signature=nqEvyBI7CrYe9rpJ6UrBUgTGy8Q%3D"
+                                },
+                                "active_dark_mode_icon": {
+                                    "uri": "action_bar_icon/dark/pc_active_mode_pro.png",
+                                    "url": "https://p6-flow-imagex-sign.byteimg.com/ocean-cloud-tos/action_bar_icon/dark/pc_active_mode_pro.png~tplv-a9rns2rl98-image.png?lk3s=8e244e95&rcl=202607230050441BD8538FCD8CC7CBF29B&rrcfp=8e47c875&x-expires=1787331044&x-signature=s2nY6nhfCfKtsPtiIX64%2F361MJA%3D"
+                                },
+                                "agent_mode": 2,
+                                "need_login": true
+                            },
+                            {
+                                "menu_type": 4,
+                                "name": "办公任务 Turbo",
+                                "sub_title_name": "执行 agent 任务 - 2.1 Turbo",
+                                "new_menu_item_tag": false,
+                                "tag": "",
+                                "icon": {
+                                    "uri": "action_bar_icon/light/mode_task.png",
+                                    "url": "https://p11-flow-imagex-sign.byteimg.com/ocean-cloud-tos/action_bar_icon/light/mode_task.png~tplv-a9rns2rl98-image.png?lk3s=8e244e95&rcl=202607230050441BD8538FCD8CC7CBF29B&rrcfp=8e47c875&x-expires=1787331044&x-signature=UDZhJUNsUYFhZ8llim6Yqx6GC%2Fc%3D"
+                                },
+                                "dark_mode_icon": {
+                                    "uri": "action_bar_icon/dark/dark_task.png",
+                                    "url": "https://p11-flow-imagex-sign.byteimg.com/ocean-cloud-tos/action_bar_icon/dark/dark_task.png~tplv-a9rns2rl98-image.png?lk3s=8e244e95&rcl=202607230050441BD8538FCD8CC7CBF29B&rrcfp=8e47c875&x-expires=1787331044&x-signature=V4N2XmEjqe6ZAPD85xCXuQTRUUg%3D"
+                                },
+                                "active_icon": {
+                                    "uri": "action_bar_icon/light/pc_active_mode_task.png",
+                                    "url": "https://p3-flow-imagex-sign.byteimg.com/ocean-cloud-tos/action_bar_icon/light/pc_active_mode_task.png~tplv-a9rns2rl98-image.png?lk3s=8e244e95&rcl=202607230050441BD8538FCD8CC7CBF29B&rrcfp=8e47c875&x-expires=1787331044&x-signature=uNOB0ok2%2BJbDGVsuSHtxVD03Z38%3D"
+                                },
+                                "active_dark_mode_icon": {
+                                    "uri": "action_bar_icon/dark/pc_active_mode_task.png",
+                                    "url": "https://p26-flow-imagex-sign.byteimg.com/ocean-cloud-tos/action_bar_icon/dark/pc_active_mode_task.png~tplv-a9rns2rl98-image.png?lk3s=8e244e95&rcl=202607230050441BD8538FCD8CC7CBF29B&rrcfp=8e47c875&x-expires=1787331044&x-signature=4ILVy5KHWOq6a8vS1jMjvor0%2FwU%3D"
+                                },
+                                "agent_mode": 1,
+                                "selected_name": "办公任务 Turbo",
+                                "need_login": true
+                            },
+                            {
+                                "menu_type": 5,
+                                "name": "办公任务 Pro",
+                                "sub_title_name": "执行 agent 任务 - 2.1 Pro",
+                                "new_menu_item_tag": false,
+                                "tag": "",
+                                "icon": {
+                                    "uri": "action_bar_icon/light/mode_task.png",
+                                    "url": "https://p11-flow-imagex-sign.byteimg.com/ocean-cloud-tos/action_bar_icon/light/mode_task.png~tplv-a9rns2rl98-image.png?lk3s=8e244e95&rcl=202607230050441BD8538FCD8CC7CBF29B&rrcfp=8e47c875&x-expires=1787331044&x-signature=UDZhJUNsUYFhZ8llim6Yqx6GC%2Fc%3D"
+                                },
+                                "dark_mode_icon": {
+                                    "uri": "action_bar_icon/dark/dark_task.png",
+                                    "url": "https://p11-flow-imagex-sign.byteimg.com/ocean-cloud-tos/action_bar_icon/dark/dark_task.png~tplv-a9rns2rl98-image.png?lk3s=8e244e95&rcl=202607230050441BD8538FCD8CC7CBF29B&rrcfp=8e47c875&x-expires=1787331044&x-signature=V4N2XmEjqe6ZAPD85xCXuQTRUUg%3D"
+                                },
+                                "active_icon": {
+                                    "uri": "action_bar_icon/light/pc_active_mode_task.png",
+                                    "url": "https://p3-flow-imagex-sign.byteimg.com/ocean-cloud-tos/action_bar_icon/light/pc_active_mode_task.png~tplv-a9rns2rl98-image.png?lk3s=8e244e95&rcl=202607230050441BD8538FCD8CC7CBF29B&rrcfp=8e47c875&x-expires=1787331044&x-signature=uNOB0ok2%2BJbDGVsuSHtxVD03Z38%3D"
+                                },
+                                "active_dark_mode_icon": {
+                                    "uri": "action_bar_icon/dark/pc_active_mode_task.png",
+                                    "url": "https://p26-flow-imagex-sign.byteimg.com/ocean-cloud-tos/action_bar_icon/dark/pc_active_mode_task.png~tplv-a9rns2rl98-image.png?lk3s=8e244e95&rcl=202607230050441BD8538FCD8CC7CBF29B&rrcfp=8e47c875&x-expires=1787331044&x-signature=4ILVy5KHWOq6a8vS1jMjvor0%2FwU%3D"
+                                },
+                                "tag_list": [
+                                    {
+                                        "type": 5,
+                                        "text": "升级",
+                                        "icon": {
+                                            "uri": "action_bar_icon/light/pc_upgrade.png",
+                                            "url": "https://p3-flow-imagex-sign.byteimg.com/ocean-cloud-tos/action_bar_icon/light/pc_upgrade.png~tplv-a9rns2rl98-image.png?lk3s=8e244e95&rcl=202607230050441BD8538FCD8CC7CBF29B&rrcfp=8e47c875&x-expires=1787331044&x-signature=6qyP46sL72FLcV3j8dDs6e%2BvUp4%3D"
+                                        },
+                                        "dark_mode_icon": {
+                                            "uri": "action_bar_icon/dark/pc_upgrade_v2.png",
+                                            "url": "https://p11-flow-imagex-sign.byteimg.com/ocean-cloud-tos/action_bar_icon/dark/pc_upgrade_v2.png~tplv-a9rns2rl98-image.png?lk3s=8e244e95&rcl=202607230050441BD8538FCD8CC7CBF29B&rrcfp=8e47c875&x-expires=1787331044&x-signature=p1BlcNgJ3%2FOZyslxO8YcavCUwUM%3D"
+                                        }
+                                    }
+                                ],
+                                "agent_mode": 1,
+                                "selected_name": "办公任务 Pro",
+                                "need_login": true,
+                                "subscribe_config": {
+                                    "jump_url": "https://www.doubao.com/member/subscription?default_sku_key=doubao_personal_std&enter_method=answer_peak_limit&scene_key=message&trigger_scene=peak_hour_limit&menu_id=5&subs_purchase_id=f873dea0-3f35-412f-901d-72f89172a301"
+                                }
+                            }
+                        ],
+                        "default_deep_think_auto": false,
+                        "new_action_bar_tag": true,
+                        "tag_disable_memory": true,
+                        "default_action_bar_menu_type_on_new_chat": "0"
+                    },
+                    "personalized_recommend": true
+                },
+                "_meta": []
+            },
+            "timing": {
+                "accountInfoTiming": 14,
+                "userSettingTiming": 257,
+                "ttwidTiming": 77
+            }
+        },
+        "thread_(token)/layout": null,
+        "thread_(token)/page": {
+            "shareInfo": []
+        }
+    },
+    "errors": null
+}

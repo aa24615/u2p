@@ -4,7 +4,9 @@ declare(strict_types=1);
 
 namespace Zyan\U2P;
 
+use Zyan\U2P\Handlers\DoubaoHandler;
 use Zyan\U2P\Handlers\GenericHandler;
+use Zyan\U2P\Handlers\QianwenHandler;
 use Zyan\U2P\Handlers\ToutiaoHandler;
 use Zyan\U2P\Handlers\WeChatHandler;
 
@@ -40,6 +42,8 @@ class U2P
         $client = $client ?: new HttpClient();
 
         $this->registerHandler(new WeChatHandler($client));
+        $this->registerHandler(new DoubaoHandler($client));
+        $this->registerHandler(new QianwenHandler($client));
         $this->registerHandler(new ToutiaoHandler($client));
         $this->setFallback(new GenericHandler($client));
     }

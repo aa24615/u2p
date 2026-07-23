@@ -57,6 +57,24 @@ class HttpClient
     }
 
     /**
+     * 发送 POST 请求（JSON body）并返回响应体。
+     *
+     * @param array<string,mixed>  $data     JSON 请求体
+     * @param array<string,string> $headers  额外请求头（与默认头合并）
+     *
+     * @throws \GuzzleHttp\Exception\GuzzleException 当请求失败或 HTTP 状态码 >= 400 时
+     */
+    public function post(string $url, array $data = [], array $headers = [], array $options = []): string
+    {
+        $response = $this->guzzle->post($url, array_merge([
+            RequestOptions::HEADERS => array_merge($this->defaultHeaders, $headers),
+            RequestOptions::JSON    => $data,
+        ], $options));
+
+        return (string) $response->getBody();
+    }
+
+    /**
      * 设置默认请求头（与已有默认头合并）。
      */
     public function setDefaultHeaders(array $headers): self
