@@ -4,11 +4,20 @@ declare(strict_types=1);
 
 namespace Zyan\U2P;
 
+use Zyan\U2P\Handlers\Ali1688Handler;
+use Zyan\U2P\Handlers\DewuHandler;
 use Zyan\U2P\Handlers\DoubaoHandler;
+use Zyan\U2P\Handlers\EbayHandler;
 use Zyan\U2P\Handlers\GenericHandler;
+use Zyan\U2P\Handlers\HosaneHandler;
+use Zyan\U2P\Handlers\JdHandler;
+use Zyan\U2P\Handlers\JinritemaiHandler;
 use Zyan\U2P\Handlers\QianwenHandler;
+use Zyan\U2P\Handlers\TaobaoHandler;
 use Zyan\U2P\Handlers\ToutiaoHandler;
+use Zyan\U2P\Handlers\VeerHandler;
 use Zyan\U2P\Handlers\WeChatHandler;
+use Zyan\U2P\Handlers\ZcoolHandler;
 
 /**
  * 网页图片抓取 SDK 入口。
@@ -44,6 +53,15 @@ class U2P
         $this->registerHandler(new WeChatHandler($client));
         $this->registerHandler(new DoubaoHandler($client));
         $this->registerHandler(new QianwenHandler($client));
+        $this->registerHandler(new Ali1688Handler($client));
+        $this->registerHandler(new DewuHandler($client));
+        $this->registerHandler(new JdHandler($client));
+        $this->registerHandler(new TaobaoHandler($client));
+        $this->registerHandler(new JinritemaiHandler($client));
+        $this->registerHandler(new EbayHandler($client));
+        $this->registerHandler(new HosaneHandler($client));
+        $this->registerHandler(new VeerHandler($client));
+        $this->registerHandler(new ZcoolHandler($client));
         $this->registerHandler(new ToutiaoHandler($client));
         $this->setFallback(new GenericHandler($client));
     }

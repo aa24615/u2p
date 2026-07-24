@@ -49,11 +49,28 @@ class HttpClient
      */
     public function get(string $url, array $headers = [], array $options = []): string
     {
-        $response = $this->guzzle->get($url, [
+        $response = $this->guzzle->get($url, array_merge([
             RequestOptions::HEADERS => array_merge($this->defaultHeaders, $headers),
-        ]);
+        ], $options));
 
         return (string) $response->getBody();
+    }
+
+    /**
+     * 跟随重定向并返回最终 URL。
+     *
+     * @param array<string,string> $headers
+     */
+    public function resolveFinalUrl(string $url, array $headers = []): string
+    {
+        $response = $this->guzzle->get($url, [
+            RequestOptions::HEADERS         => array_merge($this->defaultHeaders, $headers),
+            RequestOptions::ALLOW_REDIRECTS => ['track_redirects' => true],
+        ]);
+
+        $history = $response->getHeader('X-Guzzle-Redirect-History');
+
+        return $history !== [] ? (string) end($history) : $url;
     }
 
     /**

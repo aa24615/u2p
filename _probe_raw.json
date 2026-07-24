@@ -1,0 +1,271 @@
+{
+    "1688": {
+        "label": "1688",
+        "request_url": "https://detail.1688.com/offer/568516651500.html",
+        "final_url": "https://detail.1688.com/offer/568516651500.html",
+        "status": 200,
+        "error": null,
+        "redirect_chain": [],
+        "analysis": {
+            "body_length": 2569,
+            "title": "",
+            "has_image_signals": false,
+            "img_tag_count": 0,
+            "img_samples": [],
+            "og_image": [],
+            "json_ld_image": [],
+            "script_vars": [],
+            "api_patterns": {
+                "embedded_urls": [
+                    "https://detail.1688.com//offer/568516651500.html/_____tmd_____/punish?x5secdata=xflVY34ms2yKvY79XU7kiJVyLCyDeAHlG7ExhhWoVPfiS7DWdaOA0o-phx3MirpBYPPmUnArlRZu8O7a80ndV4ZYEZk2cQJzxX9odmH7Xi0RU2AnEOSlLjr1UqlA_MuS"
+                ]
+            },
+            "likely_antibot": true
+        }
+    },
+    "dw4_short": {
+        "label": "dw4_short",
+        "request_url": "https://dw4.co/t/A/1vrIi0NUy",
+        "final_url": "https://fast.dewu.com/page/productDetail?spuId=27297525&sourceName=shareDetail&outside_channel_type=0&share_platform_title=7&fromUserId=855a9b2ae4263e5737e3be7b7d214816&skuId=932515406&propertyValueId=808965951&gSource=product&gContentId=27297525&gContentFlag=1000040&gType=1",
+        "status": 200,
+        "error": null,
+        "redirect_chain": [
+            "https://fast.dewu.com/router/product/ProductDetail?spuId=27297525&sourceName=shareDetail&outside_channel_type=0&share_platform_title=7&fromUserId=855a9b2ae4263e5737e3be7b7d214816&skuId=932515406&propertyValueId=808965951&gSource=product&gContentId=27297525&gContentFlag=1000040&gType=1",
+            "https://fast.dewu.com/page/productDetail?spuId=27297525&sourceName=shareDetail&outside_channel_type=0&share_platform_title=7&fromUserId=855a9b2ae4263e5737e3be7b7d214816&skuId=932515406&propertyValueId=808965951&gSource=product&gContentId=27297525&gContentFlag=1000040&gType=1"
+        ],
+        "analysis": {
+            "body_length": 662446,
+            "title": "Loading...",
+            "has_image_signals": true,
+            "img_tag_count": 23,
+            "img_samples": [
+                "https://webimg.dewucdn.com/node-common/a47ca9cd-7e1b-1539-2e4c-e781bb402927-66-66.png?x-oss-process=image/resize,w_960",
+                "https://webimg.dewucdn.com/pro-img/cut-img/20250808/d57f7233b7034721b206eb9e30b07dc8.jpg?x-oss-process=image/resize,w_11",
+                "https://webimg.dewucdn.com/stark/stark-web/2275233929/4597316e99df135337286361159fd10c.jpg?x-oss-process=image/resize,w_",
+                "https://webimg.dewucdn.com/stark/stark-web/2275233929/41b06e4710952e2384164c9158c14eae.jpg?x-oss-process=image/resize,w_",
+                "https://webimg.dewucdn.com/stark/stark-web/2275233929/360467a4298204d4e80085b24ac1bf31.jpg?x-oss-process=image/resize,w_"
+            ],
+            "og_image": [],
+            "json_ld_image": [],
+            "script_vars": [],
+            "api_patterns": {
+                "embedded_urls": [
+                    "https://h5static.dewucdn.com/node-common/DEWU/page/productDetail/85a65002b81e71328fb1204d28f14cbd.js",
+                    "https://app.dewu.com/api/v1/h5/buildPage/firstPageDelivery",
+                    "https://app.dewu.com/api/v1/h5/rosefinch/targetRule/match",
+                    "https://cdn-combo.dewu.com/api/breakstone/combo??",
+                    "https://h5static.dewucdn.com/node-common/DEWU/page/productDetail/5cb35d75d3d9391ce5e51b54a892779d.css",
+                    "https://m.poizon.com/router/product/ParameterComparePage?spuId=27297525\\u0026categoryId=1000040\\u0026source=detail",
+                    "https://fast.dewu.com/router/product/ProductDetail?spuId=27297525\\u0026sourceName=shareDetail\\u0026shareSource=productDetail",
+                    "https://fast.dewu.com/router/product/ProductDetail?spuId=27297525\\u0026sourceName=shareDetail"
+                ]
+            },
+            "likely_antibot": false
+        }
+    },
+    "jinritemai": {
+        "label": "jinritemai",
+        "request_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3831479699402522995",
+        "final_url": "https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3831479699402522995",
+        "status": 200,
+        "error": null,
+        "redirect_chain": [],
+        "analysis": {
+            "body_length": 11904,
+            "title": "",
+            "has_image_signals": false,
+            "img_tag_count": 0,
+            "img_samples": [],
+            "og_image": [],
+            "json_ld_image": [],
+            "script_vars": [],
+            "api_patterns": {
+                "embedded_urls": [
+                    "https://lf3-ecom-toc.jinritemai.com/obj/ecom-toc/ecommerce/gecko/resource/js/index.865f0fc5.pia.worker.js",
+                    "https://mon.zijieapi.com/monitor_browser/collect/batch/?biz_id=web_bdms_cn"
+                ]
+            },
+            "likely_antibot": true
+        }
+    },
+    "jd": {
+        "label": "jd",
+        "request_url": "https://item.jd.com/10174996096733.html",
+        "final_url": "https://item.jd.com/10174996096733.html",
+        "status": 200,
+        "error": null,
+        "redirect_chain": [],
+        "analysis": {
+            "body_length": 36015,
+            "title": "京东(JD.COM)-正品低价、品质保障、配送及时、轻松购物！",
+            "has_image_signals": true,
+            "img_tag_count": 1,
+            "img_samples": [
+                "//jcm.jd.com/pre"
+            ],
+            "og_image": [],
+            "json_ld_image": [],
+            "script_vars": [],
+            "api_patterns": {
+                "embedded_urls": [
+                    "https://api.m.jd.com",
+                    "https://storage.360buyimg.com/retail-mall/pc_item_components_3/prod/4.0.20/polyfills-legacy-CZVt482k.js",
+                    "https://storage.360buyimg.com/retail-mall/pc_item_components_3/prod/4.0.20/index-legacy-DhEY2zeP.js"
+                ]
+            },
+            "likely_antibot": false
+        }
+    },
+    "taobao": {
+        "label": "taobao",
+        "request_url": "https://item.taobao.com/item.htm?id=1062941248301",
+        "final_url": "https://item.taobao.com/item.htm?id=1062941248301",
+        "status": 200,
+        "error": null,
+        "redirect_chain": [],
+        "analysis": {
+            "body_length": 5140,
+            "title": "",
+            "has_image_signals": false,
+            "img_tag_count": 0,
+            "img_samples": [],
+            "og_image": [],
+            "json_ld_image": [],
+            "script_vars": [],
+            "api_patterns": {
+                "embedded_urls": [
+                    "https://login.taobao.com/member/login.jhtml?style=mini&newMini2=true&from=sm&full_redirect=false&redirectURL=https%3a%2f%2fitem.taobao.com:443/wow/z/app/tbpc/pc-detail-ssr-2025/home%2F_____tmd_____%2Fpage%2Fc",
+                    "https://login.m.taobao.com/login.htm?from=sm&ttid=h5@iframe&redirectURL=https%3a%2f%2fitem.taobao.com:443/wow/z/app/tbpc/pc-detail-ssr-2025/home%2F_____tmd_____%2Fpage%2Fclose_iframe_page%3Frand%3DS3WxGHAgAt7"
+                ]
+            },
+            "likely_antibot": true
+        }
+    },
+    "ebay": {
+        "label": "ebay",
+        "request_url": "https://www.ebay.com/itm/267149219732",
+        "final_url": "https://www.ebay.com/itm/267149219732",
+        "status": 403,
+        "error": null,
+        "redirect_chain": [],
+        "analysis": {
+            "body_length": 1831,
+            "title": "Error Page | eBay",
+            "has_image_signals": false,
+            "img_tag_count": 0,
+            "img_samples": [],
+            "og_image": [],
+            "json_ld_image": [],
+            "script_vars": [],
+            "api_patterns": {
+                "embedded_urls": []
+            },
+            "likely_antibot": false
+        }
+    },
+    "hosane": {
+        "label": "hosane",
+        "request_url": "https://www.hosane.com/auction/detail/p13090032",
+        "final_url": "https://www.hosane.com/auction/detail/p13090032",
+        "status": 200,
+        "error": null,
+        "redirect_chain": [],
+        "analysis": {
+            "body_length": 678725,
+            "title": "LOT 7731 1910年代北洋高级警官带勋戎装老照片一件（附原木框）。尺寸：19.1×13.1cm.摄制精美、保存较好。 - 泓盛拍卖官方网站",
+            "has_image_signals": true,
+            "img_tag_count": 12,
+            "img_samples": [
+                "/images/logo.png"
+            ],
+            "og_image": [],
+            "json_ld_image": [],
+            "script_vars": [
+                "window.__NUXT__"
+            ],
+            "api_patterns": {
+                "embedded_urls": []
+            },
+            "likely_antibot": false
+        }
+    },
+    "veer": {
+        "label": "veer",
+        "request_url": "https://www.veer.com/photo/107294206.html",
+        "final_url": "https://www.imageshop.com/photo/107294206.html",
+        "status": 200,
+        "error": null,
+        "redirect_chain": [
+            "https://www.imageshop.com/photo/107294206.html"
+        ],
+        "analysis": {
+            "body_length": 34695,
+            "title": "黑板前的彩色椅子图片-商业图片-正版原创图片下载购买-视图网图库",
+            "has_image_signals": true,
+            "img_tag_count": 16,
+            "img_samples": [
+                "//res-veer.cfp.cn/veer/static/landing/welcome_avatar.png",
+                "//res-veer.cfp.cn/veer/static/landing/icon_close_x_hover.svg",
+                "//res-veer.cfp.cn/veer/static/landing/imageshop_logo.svg",
+                "//res-veer.cfp.cn/veer/static/landing/imageshop_logo_blank.svg",
+                "//res-veer.cfp.cn/veer/static/landing/icon_caron.svg"
+            ],
+            "og_image": [],
+            "json_ld_image": [],
+            "script_vars": [],
+            "api_patterns": {
+                "embedded_urls": [
+                    "https://www.imageshop.com/photo/107294206.html",
+                    "https://www.imageshop.com/photo/",
+                    "https://www.imageshop.com/search-photo/%20/?credit=hkeita%252F%25E8%25A7%2586%25E8%25A7%2589%25E4%25B8%25AD%25E5%259B%25BD",
+                    "https://www.imageshop.com/about/product/"
+                ]
+            },
+            "likely_antibot": true
+        }
+    },
+    "zcool": {
+        "label": "zcool",
+        "request_url": "https://www.zcool.com.cn/work/ZMjIxMzQ1MTI=.html",
+        "final_url": "https://www.zcool.com.cn/work/ZMjIxMzQ1MTI=.html",
+        "status": 200,
+        "error": null,
+        "redirect_chain": [],
+        "analysis": {
+            "body_length": 462143,
+            "title": "南方增长天王_包小猩-站酷ZCOOL",
+            "has_image_signals": true,
+            "img_tag_count": 109,
+            "img_samples": [
+                "https://img.zcool.cn/community/66f10ed156f28yc72zar3v9844.jpeg?x-oss-process=image/resize,m_fill,w_160,h_160,limit_0/aut",
+                "https://img.zcool.cn/community/66f10ed156f28yc72zar3v9844.jpeg?x-oss-process=image/resize,m_fill,w_160,h_160,limit_0/aut",
+                "https://img.zcool.cn/community/010b7659310008a8012193a36b36bb.jpg?x-oss-process=image/saveexif,1/auto-orient,1/resize,m_",
+                "https://img.zcool.cn/community/013fcc59310012a8012193a3768cb8.jpg?x-oss-process=image/saveexif,1/auto-orient,1/resize,m_",
+                "https://img.zcool.cn/community/01d93e59310012a8012193a39cc621.jpg?x-oss-process=image/saveexif,1/auto-orient,1/resize,m_"
+            ],
+            "og_image": [
+                "https://img.zcool.cn/community/00d98b5931004fa8012193a385086c.jpg?k=ed6eacd7a651ce6dfbe3d83a27c50a52&amp;t=6a64dd80"
+            ],
+            "json_ld_image": [
+                "https://img.zcool.cn/community/00d98b5931004fa8012193a385086c.jpg?k=ed6eacd7a651ce6dfbe3d83a27c50a52&t=6a64dd80"
+            ],
+            "script_vars": [
+                "__NEXT_DATA__"
+            ],
+            "api_patterns": {
+                "embedded_urls": [
+                    "https://passport.zcool.com.cn/loginApp.do?appId=1006&amp;cback=https%3A%2F%2Fmy.zcool.com.cn%2FuploadProduct",
+                    "https://data.zcool.com.cn/sa?project=production&site=zcool&from=pc",
+                    "https://www.zcool.com.cn/top/product.do?\\u0026rankProductCategory=24\\u0026rankId=13",
+                    "https://www.zcool.com.cn/top/product.do?\\u0026rankProductCategory=24\\u0026rankId=12",
+                    "https://www.zcool.com.cn/top/product.do?\\u0026rankProductCategory=24\\u0026rankId=11",
+                    "https://api.gogoup.com",
+                    "https://tubeapi.zcool.com.cn",
+                    "https://api.zcool.com.cn",
+                    "https://webapi-artflo.zcool.com.cn"
+                ]
+            },
+            "likely_antibot": true
+        }
+    }
+}

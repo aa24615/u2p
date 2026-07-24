@@ -92,4 +92,105 @@ abstract class AbstractHandler implements HandlerInterface
         $url = preg_replace('/#.*$/', '', $url);
         return trim($url);
     }
+
+    /**
+     * 将协议相对或相对地址转为绝对 http(s) 地址。
+     */
+    protected function normalizeAbsoluteUrl(string $url, string $baseUrl = ''): string
+    {
+        $url = html_entity_decode(trim($url), ENT_QUOTES | ENT_HTML5, 'UTF-8');
+        if ($url === '') {
+            return '';
+        }
+        if (preg_match('#^https?://#i', $url)) {
+            return $this->cleanUrl($url);
+        }
+        if (strpos($url, '//') === 0) {
+            return $this->cleanUrl('https:' . $url);
+        }
+        if ($baseUrl === '') {
+            return $this->cleanUrl($url);
+        }
+
+        $parts = parse_url($baseUrl);
+        $scheme = $parts['scheme'] ?? 'https';
+        $host = $parts['host'] ?? '';
+        $port = isset($parts['port']) ? ':' . $parts['port'] : '';
+        if (strpos($url, '/') === 0) {
+            return $this->cleanUrl($scheme . '://' . $host . $port . $url);
+        }
+
+        $baseDir = '';
+        if (isset($parts['path'])) {
+            $path = $parts['path'];
+            $baseDir = substr($path, -1) === '/'
+                ? rtrim($path, '/')
+                : rtrim(dirname($path), '/');
+        }
+
+        return $this->cleanUrl($scheme . '://' . $host . $port . $baseDir . '/' . $url);
+    }
+
+    /**
+     * @param string[] $urls
+     *
+     * @return string[]
+     */
+    protected function uniqueUrls(array $urls): array
+    {
+        return array_values(array_unique(array_filter($urls)));
+    }
+
+    /**
+     * @return string[]
+     */
+    protected function extractOgImages(string $html): array
+    {
+        $images = [];
+        if (preg_match_all('/<meta[^>]+property=["\']og:image(?::[^"\']*)?["\'][^>]+content=["\']([^"\']+)["\']/i', $html, $matches)) {
+            $images = array_merge($images, $matches[1]);
+        }
+        if (preg_match_all('/<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image(?::[^"\']*)?["\']/i', $html, $matches)) {
+            $images = array_merge($images, $matches[1]);
+        }
+
+        return $this->uniqueUrls(array_map([$this, 'normalizeAbsoluteUrl'], $images));
+    }
+
+    /**
+     * @return string[]
+     */
+    protected function extractJsonLdImages(string $html): array
+    {
+        $images = [];
+        if (!preg_match_all('/<script[^>]*type=["\']application\/ld\+json["\'][^>]*>(.*?)<\/script>/is', $html, $blocks)) {
+            return [];
+        }
+
+        foreach ($blocks[1] as $block) {
+            if (preg_match('/"image"\s*:\s*"([^"]+)"/', $block, $match)) {
+                $images[] = $match[1];
+                continue;
+            }
+            if (preg_match('/"image"\s*:\s*\[\s*"([^"]+)"/', $block, $match)) {
+                $images[] = $match[1];
+            }
+        }
+
+        return $this->uniqueUrls(array_map([$this, 'normalizeAbsoluteUrl'], $images));
+    }
+
+    /**
+     * 解析页面中的 __NEXT_DATA__ JSON。
+     */
+    protected function extractNextData(string $html): ?array
+    {
+        if (!preg_match('/<script[^>]*id=["\']__NEXT_DATA__["\'][^>]*>(.*?)<\/script>/is', $html, $match)) {
+            return null;
+        }
+
+        $data = json_decode(trim($match[1]), true);
+
+        return is_array($data) ? $data : null;
+    }
 }
